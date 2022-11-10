@@ -1,1 +1,1 @@
-# FRI
+# FRI repozitorij za sprotno delo.
