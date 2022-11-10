@@ -8,6 +8,12 @@
 
 export function identity() {
 	// TODO implement
+	return [
+		[1, 0, 0, 0],
+		[0, 1, 0, 0],
+		[0, 0, 1, 0],
+		[0, 0, 0, 1]
+	];
 }
 
 export function translation(t) {
@@ -20,7 +26,7 @@ export function scaling(s) {
 
 export function rotationX(angle) {
 	// TODO implement
-	var Rx = [
+	return [
 		[1, 0, 0],
 		[0, Math.cos(angle), -Math.sin(angle)],
 		[0, Math.sin(angle), Math.cos(angle)],
@@ -29,7 +35,7 @@ export function rotationX(angle) {
 
 export function rotationY(angle) {
 	// TODO implement
-	var Ry = [
+	return [
 		[Math.cos(angle), 0, Math.sin(angle)],
 		[0, 1, 0],
 		[-Math.sin(angle), 0, Math.cos(angle)],
@@ -38,7 +44,7 @@ export function rotationY(angle) {
 
 export function rotationZ(angle) {
 	// TODO implement
-	var Rz = [
+	return [
 		[Math.cos(angle), -Math.sin(0), 0],
 		[Math.sin(angle), Math.cos(angle), 0],
 		[0, 0, 1],
