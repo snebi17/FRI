@@ -1,1 +1,1 @@
-# FRI repozitorij za sprotno delo.
+2. letnik FRI
