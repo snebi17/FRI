@@ -1,0 +1,15 @@
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\obj\Debug\net6.0\Bank.csproj.AssemblyReference.cache
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\obj\Debug\net6.0\Bank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\obj\Debug\net6.0\Bank.AssemblyInfoInputs.cache
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\obj\Debug\net6.0\Bank.AssemblyInfo.cs
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\obj\Debug\net6.0\Bank.csproj.CoreCompileInputs.cache
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\bin\Debug\net6.0\Bank.exe
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\bin\Debug\net6.0\Bank.deps.json
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\bin\Debug\net6.0\Bank.runtimeconfig.json
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\bin\Debug\net6.0\Bank.dll
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\bin\Debug\net6.0\Bank.pdb
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\obj\Debug\net6.0\Bank.dll
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\obj\Debug\net6.0\refint\Bank.dll
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\obj\Debug\net6.0\Bank.pdb
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\obj\Debug\net6.0\Bank.genruntimeconfig.cache
+C:\Users\Nejc\Documents\School\2L\IS\dev\vaja01\Bank\obj\Debug\net6.0\ref\Bank.dll
