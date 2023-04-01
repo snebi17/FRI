@@ -1,0 +1,50 @@
+Server:
+	- nano /etc/network/interfaces 
+		-> enp0s3 inet dhcp, 
+		-> enp0s8 inet static (address 172.31.224.65, netmask 255.255.255.192)
+	- service NetworkManager stop ~
+	- systemctl disable NetworkManager (~ ustaviti potrebujemo NetworkManager in ga onemogočiti
+	  v systemctl)
+	- z ukazom "ip a" potrdimo, da sta oba adapterja pravilno nastavljena (adapter enp0s3 ima
+	  ip 10.0.2.15/24, adapter enp0s8 pa ip 172.31.224.65/26)
+	-------- NASLEDNJI UKAZI SE NAVEZUJEJO NA SAMO VZPOSTAVITEV DHCP STREŽNIKA -------
+	- "apt install isc-dhcp-server" -> namesti isc-dhcp-server
+	- po končani namestitvi ugotovimo, da manjkajo nastavitve omrežne kartice
+	- nano /etc/default/isc-dhcp-server -> nastavimo INTERFACESv4="enp0s8" in tako strežniku 
+	  povemo, da naj strežnik deluje na omrežni kartici "enp0s8"
+	- nano /etc/dhcp/dhcpd.conf -> nastavitve dhcp strežnika, kjer mu povemo, v kakšnem razponu
+	  naj dodeljuje IP naslove, povemo mu default gateway omrežja, ter IP naslov DNS strežnika
+	  (1.1.1.1 je javni Cloudfare DNS strežnik)
+	  subnet 172.31.224.64 netmask 255.255.255.192 {
+		range 172.31.224.83 172.31.224.114; // razpon
+		option routers 172.31.224.65; // DG
+		option domain-name-servers 1.1.1.1; // DNS strežnik
+	  }
+	- systemctl restart isc-dhcp-server.service -> resetiramo dhcp strežnik
+	  z novimi nastavitvami
+
+Client:
+	- z ukazom "ip a" vidimo, da dhcp strežnik deluje pravilno, napravi je dodelil IP v pravilnem
+	  razponu (od 172.31.224.83 - 172.31.224.114) in sicer 172.31.224.83
+	- nano /etc/dhcp/dhclient.conf -> prepend domain-name-servers 1.1.1.1; s tem napravi nastavimo
+	  DNS server
+	- "dhclient -r enp0s3" ->  s tem omogočimo dostop do interneta preko DNS strežnika z novimi
+	  nastavitvami
+
+Server: 
+	- opazimo, da Client nima dostopa do interneta, saj na Serverju nimamo vklopljenega 
+	  omrežnega usmerjanja
+	- nano /etc/sysctl.conf -> odkomentiramo net.ipv4.ip_forward=1, da omogočimo usmerjanje 
+	  ipv4 prometa
+	- nastaviti je potrebno tudi preslikovanje IP naslovov 
+	  "iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE"
+	- vse te nastavitve se po defaultu ob ponovnem zaganjanju računalnika zbrišejo, zato jih
+	  moramo shraniti v datoteko -> "apt install iptables-persistent", 
+	  "iptables-save > /etc/iptables/rules.v4"
+
+1. Na prvi virtualki (Server) zaženemo ukaz "nano /etc/network/interfaces", kjer nastavimo adapterja
+   "esp0s3" in "esp0s8", tako, da bo prvi adapter pridobil IP od DHCP strežnika, drugi pa statično
+   nastavimo IP našega DHCP strežnika ter masko 255.255.255.192. Shranimo in se vrnemo v ukazno vrstico.
+2. Ustaviti in onemogočiti moramo NetworkManager, tako da zaženemo ukaze 
+
+2 TOČKI

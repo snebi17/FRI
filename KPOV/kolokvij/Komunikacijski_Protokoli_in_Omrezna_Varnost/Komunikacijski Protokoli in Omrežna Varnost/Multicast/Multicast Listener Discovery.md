@@ -1,0 +1,1 @@
+MLD je originalno definiran v RFC 2710 in je semantično IGMP za IPv6

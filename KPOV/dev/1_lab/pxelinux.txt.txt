@@ -1,0 +1,16 @@
+Server:
+	- strežnik potrebuje sistemski nalagalnik, ki omogoča zagon preko omrežja (pxelinux), 
+	  ki ga namestimo in ga premaknemo v mapo /srv/tftp, da lahko odjemalec dostopa do 
+	  bootloaderja preko omrežja
+	  -> "apt install pxelinux" > cd /srv/tftp > cp /usr/lib/PXELINUX/pxelinux.0 .
+	- potrebno je prilagoditi tudi dhcp deamon, kjer v konfiguracijsko datoteko zapišemo še
+	  ime sistemskega nalagalnika, v mojem primeru sneberger.0 in next-server 172.31.224.65
+	  subnet 172.31.224.64 netmask 255.255.255.192 {
+	  	range 172.31.224.83 172.31.224.114;
+		option routers 172.31.224.65;
+		option domain-name-servers 1.1.1.1;
+		filename "sneberger.0";
+		next-server 172.31.224.65;
+	  }
+Client:
+	- v nastavitvah virtualke nastavimo clienta boot order, da se zaganja preko omrežja

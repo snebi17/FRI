@@ -1,0 +1,18 @@
+Server:
+	- "apt install tftpd" -> namestimo tftp strežnik, s katerim bomo prenašali datoteke
+	  preko omrežja na remote naprave
+	- tftpd potrebuje inetd, da deluje (inetd = internet deamon, service, ki preverja 
+	  stanje na določenem portu (port od UDP = 69) in omogoča povezovanje nanj
+	  "/etc/inetd.conf" -> konfiguracijska datoteka za inetd, kjer nastavljamo posamezne
+	  programe, ki se ob določenih zahtevah poženejo
+	- mapa /srv/tftp je mapa iz katere bo tftp strežnik posredoval datoteke, ki se nahajajo 
+	  znotraj nje, po defaultu ne obstaja, zato jo moramo ustvariti "mkdir /srv/tftp",
+	  ustvarimo pa tudi neko testno datoteko test.txt, katero bomo posredovali, ko bo na port
+	  prišla ustrezna zahteva
+
+Client:
+	- "apt install tftp" -> namestimo tftp odjemalca in preverimo delovanje tftp strežnika
+	- "tftp > connect 172.31.224.65 > get test.txt > "Received 34B in 0.0 seconds" > quit"
+	  tftp strežnik deluje!
+
+2 TOČKI
