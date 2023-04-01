@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { transpose } from "./Matrix.mjs";
 import { transform } from "./transform.mjs";
 import {
@@ -9,12 +10,18 @@ import {
 	length,
 	normalize,
 } from "./Vector.mjs";
+=======
+import { transform } from "./transform.mjs";
+import "./Vector.mjs";
+import { project } from "./Vector.mjs";
+>>>>>>> b67cc0623e37f64e5a0cf96156d87212273cf4cc
 
 const input = document.getElementById("input");
 const output = document.getElementById("output");
 
 input.addEventListener("change", (e) => {
 	const points = JSON.parse(input.value);
+<<<<<<< HEAD
 	console.log(points);
 	// const transformedPoints = transform(points);
 	// const transformedPoints = negate(points);
@@ -25,5 +32,9 @@ input.addEventListener("change", (e) => {
 	// console.log(angle(points[0], points[1]));
 	// console.log(normalize(points));
 	const transformedPoints = transpose(points);
+=======
+	const transformedPoints = transform(points);
+	// const transformedPoints = project(points[0], points[1]);
+>>>>>>> b67cc0623e37f64e5a0cf96156d87212273cf4cc
 	output.value = JSON.stringify(transformedPoints);
 });

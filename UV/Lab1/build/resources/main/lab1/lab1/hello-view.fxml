@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab1.lab1.HelloController">
+   <top>
+      <BorderPane prefHeight="51.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu text="_Datoteka">
+                  <items>
+                    <MenuItem onAction="#onOpen" text="_Odpri" />
+                        <MenuItem onAction="#onRemove" text="_Pobriši" />
+                        <MenuItem onAction="#onExit" text="_Izhod" />
+                  </items>
+                </Menu>
+                <Menu fx:id="menuName" text="Izbire_1">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="I1 N" />
+                        <MenuItem mnemonicParsing="false" text="I1 E" />
+                        <MenuItem mnemonicParsing="false" text="I1 J" />
+                        <MenuItem mnemonicParsing="false" text="I1 C" />
+                  </items>
+                </Menu>
+                <Menu fx:id="menuSurname" text="Izbire_2">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="I2 S" />
+                        <MenuItem mnemonicParsing="false" text="I2 N" />
+                        <MenuItem mnemonicParsing="false" text="I2 E" />
+                        <MenuItem mnemonicParsing="false" text="I2 B" />
+                        <MenuItem mnemonicParsing="false" text="I2 E" />
+                        <MenuItem mnemonicParsing="false" text="I2 R" />
+                        <MenuItem mnemonicParsing="false" text="I2 G" />
+                        <MenuItem mnemonicParsing="false" text="I2 E" />
+                        <MenuItem mnemonicParsing="false" text="I2 R" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <bottom>
+            <ToolBar fx:id="toolbarFName" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <items>
+                <Button mnemonicParsing="false" text="I1 N" />
+                  <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" text="I1 E" />
+                  <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" text="I1 J" />
+                  <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" text="I1 C" />
+                  <Button layoutX="91.0" layoutY="13.0" mnemonicParsing="false" text="I2 S" />
+                  <Button mnemonicParsing="false" text="I2 N" />
+                  <Button mnemonicParsing="false" text="I2 E" />
+                  <Button mnemonicParsing="false" text="I2 B" />
+                  <Button mnemonicParsing="false" text="I2 E" />
+                  <Button mnemonicParsing="false" text="I2 R" />
+                  <Button mnemonicParsing="false" text="I2 G" />
+                  <Button mnemonicParsing="false" text="I2 E" />
+                  <Button mnemonicParsing="false" text="I2 R" />
+              </items>
+            </ToolBar>
+         </bottom>
+      </BorderPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="349.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="input" layoutX="302.0" layoutY="19.0" prefHeight="25.0" prefWidth="284.0" />
+            <ComboBox fx:id="combo" layoutX="302.0" layoutY="59.0" prefHeight="25.0" prefWidth="285.0" />
+            <Button fx:id="sort" layoutX="237.0" layoutY="59.0" mnemonicParsing="false" text="Sortiraj" />
+            <Label layoutX="15.0" layoutY="23.0" text="Vnesi kraj:" />
+            <Label layoutX="15.0" layoutY="63.0" text="Kraj:" />
+            <RadioButton fx:id="add" layoutX="38.0" layoutY="118.0" mnemonicParsing="false" text="Dodaj" />
+            <RadioButton fx:id="removeFirst" layoutX="221.0" layoutY="118.0" mnemonicParsing="false" text="Odstrani prvega" />
+            <RadioButton fx:id="removeSelected" layoutX="444.0" layoutY="118.0" mnemonicParsing="false" text="Odstrani izbranega" />
+            <Label layoutX="15.0" layoutY="159.0" text="Izberi element:" />
+            <Label layoutX="15.0" layoutY="199.0" text="Sporočila:" />
+            <Label fx:id="messages" layoutX="77.0" layoutY="199.0" prefHeight="51.0" prefWidth="205.0" />
+            <Label layoutX="15.0" layoutY="304.0" text="Status:" />
+            <Label fx:id="status" layoutX="58.0" layoutY="304.0" prefHeight="17.0" prefWidth="205.0" />
+            <Spinner fx:id="spinner" layoutX="303.0" layoutY="155.0" prefHeight="25.0" prefWidth="284.0" />
+            <CheckBox layoutX="408.0" layoutY="199.0" mnemonicParsing="false" onAction="#toggleDuplicates" text="Prepovej dvojnike" />
+            <Button layoutX="335.0" layoutY="241.0" mnemonicParsing="false" onAction="#executeAction" prefHeight="38.0" prefWidth="219.0" text="Izvedi izbrano akcijo" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
