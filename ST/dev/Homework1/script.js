@@ -1,7 +1,10 @@
 let inventory = [];
+let displayInventory = [];
 let isMobile;
 
-let categoryMap = {};
+addEventListener("resize", (e) => {
+	isMobile = e.target.innerWidth < 400;
+});
 
 let exitModal = document.getElementById("exit-modal");
 exitModal.addEventListener("click", () => {
@@ -13,15 +16,15 @@ let backModal = document.getElementById("back-modal");
 backModal.addEventListener("click", () => {
 	let modal = document.getElementById("cards-modal");
 	hideModal(modal);
-	modal.childNodes.forEach((node) => {
-		if (node.nodeName == "DIV") {
-			node.remove();
-		}
-	});
+	console.log(modal.childNodes);
+	const childNodes = Array.from(modal.childNodes);
+	const filteredNodes = childNodes.filter(
+		(node) => node.nodeName == "BUTTON"
+	);
+	modal.replaceChildren(...filteredNodes);
 });
 
 window.onload = () => {
-	isMobile = window.outerWidth <= 768;
 	setup();
 };
 
@@ -40,11 +43,7 @@ function setup() {
 			});
 	} else {
 		inventory = JSON.parse(localStorage.getItem("inventory"));
-		if (!isMobile) {
-			generateCards(12);
-		} else {
-			generateCards(8);
-		}
+		generateCards();
 	}
 
 	let addCategoryForm = document.getElementById("add-form");
@@ -60,27 +59,15 @@ function setup() {
 	});
 }
 
-function generateCards(n) {
+function generateCards() {
 	let cards = document.getElementById("cards");
 	if (inventory.length > 0) {
-		if (inventory.length < n) {
-			inventory.forEach((card, i) => {
-				let text = Object.keys(card).toString();
-				let length = Object.values(card)[0].length;
-				let div = generateCard(text, length, i);
-				cards.appendChild(div);
-			});
-		} else {
-			for (let i = 0; i < n - 1; i++) {
-				let text = Object.keys(inventory[i]).toString();
-				let length = Object.values(inventory[i])[0].length;
-				let div = generateCard(text, length, i);
-				cards.appendChild(div);
-			}
-			let div = generateMoreCard();
+		inventory.forEach((card, i) => {
+			let text = Object.keys(card).toString();
+			let length = Object.values(card)[0].length;
+			let div = generateCard(text, length, i);
 			cards.appendChild(div);
-			return;
-		}
+		});
 	}
 	let div = generateAddCard();
 	cards.appendChild(div);
@@ -97,27 +84,7 @@ function generateCard(txt, len, i) {
 	div.addEventListener("click", (e) => {
 		let cardsModal = document.getElementById("cards-modal");
 		showModal(cardsModal);
-		// Object.values(inventory[i]).forEach((card) => {
-		// 	card.forEach((question) => {
-		// 		let q = Object.keys(question).toString();
-		// 		Object.values(question)[0].forEach((answer) => {
-		// 			let a = Object.keys(answer).toString();
-		// 		});
-		// 	});
-		// });
 		generateCategoryCards(i, cardsModal);
-	});
-	return div;
-}
-
-function generateMoreCard() {
-	let div = document.createElement("div");
-	div.classList.add("grid-item");
-	let li = document.createElement("li");
-	li.classList.add("fa-solid", "fa-ellipsis");
-	div.appendChild(li);
-	div.addEventListener("click", (e) => {
-		// show more category cards
 	});
 	return div;
 }
@@ -151,6 +118,8 @@ function generateCategoryCards(i, modal) {
 			});
 			modal.appendChild(div);
 		});
+		let div = generateAddCard();
+		modal.appendChild(div);
 	});
 }
 
