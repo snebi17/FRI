@@ -1,0 +1,163 @@
+{
+  "main": {
+    "id": "9f08eefbd159acc0",
+    "type": "split",
+    "children": [
+      {
+        "id": "00b2257747c42cde",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d070b8760895030",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. Uvod/Podatek, informacija, znanje.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "95fc052555d2e8af",
+    "type": "split",
+    "children": [
+      {
+        "id": "9d1b3e6648d53ce9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ed0b14962f77518a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1f9ab3fa5089b3a5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b5338681862c7f79",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "ee574baa216f6f56",
+    "type": "split",
+    "children": [
+      {
+        "id": "f440f11519e8f11c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "18b37e01e5d7d666",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1. Uvod/Podatek, informacija, znanje.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ccdc2b1ec236d4d4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1. Uvod/Podatek, informacija, znanje.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "354788a26ee86ac9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "da2958c3690facd5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1. Uvod/Podatek, informacija, znanje.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "2d070b8760895030",
+  "lastOpenFiles": [
+    "1. Uvod/Informatika.md",
+    "Untitled.md",
+    "1. Uvod/Informacijska družba.md",
+    "6. Arhitekture porazdeljenih sistemov/SOA, mikrostoritve.md",
+    "6. Arhitekture porazdeljenih sistemov/Vmesni sloji in druge storitve v porazdeljenih sistemih.md",
+    "6. Arhitekture porazdeljenih sistemov/Računalništvo v oblaku.md",
+    "6. Arhitekture porazdeljenih sistemov/Strežniki in nivojske arhitekture.md",
+    "5. Informacijske tehnologije/Dokumentacijski sistemi in elektronski arhiv.md",
+    "5. Informacijske tehnologije/Varnost.md",
+    "5. Informacijske tehnologije/Virtualizacija.md"
+  ]
+}

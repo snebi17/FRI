@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Web technologies</h1>
+    </header>
+    <div class="content-wrapper">
+        <div class="class-participants">
+            <h4>The list of class participants</h4>
+            <table>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Role</th>
+                </tr>
+                <tr>
+                    <td>Aleš</td>
+                    <td>Smrdel</td>
+                    <td>Lecturer</td>
+                </tr>
+                <tr>
+                    <td>David</td>
+                    <td>Jelenc</td>
+                    <td>Teaching assistant</td>
+                </tr>
+                <tr>
+                    <td>Nejc</td>
+                    <td>Šneberger</td>
+                    <td>Student</td>
+                </tr>
+            </table>
+        </div>
+        <div class="add-participant">
+            <form>
+                <fieldset>
+                    <legend>Add a new participant</legend>
+                    <div>
+                        <label for="fName">First name</label>
+                        <input type="text" id="fName">
+                    </div>
+                    <div>
+                        <label for="lName">Last name</label>
+                        <input type="text" id="lName">
+                    </div>
+                    <div>
+                        <label for="role">Role</label>
+                        <select id="role" name="role">
+                            <option value="lecturer">Lecturer</option>
+                            <option value="teaching_assistant">Teaching assistant</option>
+                            <option value="student">Student</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button>Clear</button>
+                        <button>Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>An example footer.</p>
+    </footer>
+</body>
+
+</html>

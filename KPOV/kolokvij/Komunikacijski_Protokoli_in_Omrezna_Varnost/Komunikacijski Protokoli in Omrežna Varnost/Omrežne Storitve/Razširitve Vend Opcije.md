@@ -1,0 +1,3 @@
+Razširitve 64B polje (po potrebi večjega) protokola BOOTP so definirane v RFC 1497 - BOOTP Vendor Information Extensions.
+
+Prva vrednost je čarobni piškotek "99.130.83.99". Te razširitve se lahko uporabljajo za razne elemente, lahko jih uporabljajo tudi za druge informacije, kot so podatki o drugih strežnikih...

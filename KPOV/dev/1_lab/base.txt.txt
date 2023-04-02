@@ -1,0 +1,9 @@
+Vzpostavil sem virtualko z imenom "Server", na katero je naložen Debian. 
+Po zaključku inštalacije sem kloniral ustvarjeno virtualko in ji nastavil ime
+"Client", da se razlikujeta po funkciji. V obeh sem na mrežni kartici enp0s3 nastavil
+naslova 192.168.1.1/24 (Server) in 192.168.1.2/24 (Client). V nastavitvah virtualke za 
+Server nastavimo adapter 1 na NAT omrežje, adapter 2 pa na Internal Network, v virtualki Client
+pa adapter 1 na Internal Network, da bo lahko pridobila ip naslov preko DHCP strežnika.
+
+DHCP done ... 2T
+TFTP done ... 2T
