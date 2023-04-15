@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Kdaj potrebujete avto?">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Label>
+      <VBox alignment="CENTER">
+         <children>
+            <Label text="Datum izposoje">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <DatePicker />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER">
+         <children>
+            <Label text="Datum vrnitve">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <DatePicker />
+         </children>
+      </VBox>
+   </children>
+</VBox>

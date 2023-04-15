@@ -1,0 +1,13 @@
+.text-field {
+    -fx-background-color: #f0f0f0, #c7c7c7;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px 10px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #505050;
+}
+
+.grid-pane {
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);
+}

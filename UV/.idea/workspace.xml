@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d9e8968-88e7-4ad0-9fa0-32c241688bcd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../AiPS/snov/Algoritmi in Podatkovne Strukture" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OR/dev/MiMo_Student_Release" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OR/dev/ORLab-STM32H7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3D-Game" beforeDir="false" afterPath="$PROJECT_DIR$/../3D-Game" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AiPS/dev/izzivi/Naloga1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EMP/dev/Projekt" beforeDir="false" afterPath="$PROJECT_DIR$/../EMP/dev/Projekt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/Projekt/SocialNetworkAPI" beforeDir="false" afterPath="$PROJECT_DIR$/../IS/dev/Projekt/SocialNetworkAPI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/api.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/api.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/api.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OR/dev/2_naloga/naloga1.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OR/dev/2_naloga/naloga2.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OR/dev/2_naloga/naloga3.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OR/dev/2_naloga/naloga4.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PNS" beforeDir="false" afterPath="$PROJECT_DIR$/../PNS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ST/dev/Homework1/card.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ST/dev/Homework1/card.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ST/dev/Homework1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ST/dev/Homework1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ST/dev/Homework1/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ST/dev/Homework1/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ST/dev/Homework1/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ST/dev/Homework1/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2N9d89ybyBPUgjGSrDt911Wpzl7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d9e8968-88e7-4ad0-9fa0-32c241688bcd" name="Changes" comment="" />
+      <created>1679080075561</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679080075561</updated>
+      <workItem from="1679080075770" duration="24000" />
+      <workItem from="1681471325546" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

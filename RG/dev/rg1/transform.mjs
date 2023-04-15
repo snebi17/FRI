@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+import "./Matrix.mjs";
+import "./Vector.mjs";
+
+export function transform(points) {
+    // TODO implement
+    translate(2.8);
+    rotationX(Math.PI / 4);
+    translate(7.15);
+    translate(2.45);
+    
+    rotationX((5 * Math.PI) / 11);
+    rotationZ((9 * Math.PI) / 11);
+}
+=======
 import {
 	translation,
 	rotationX,
@@ -38,3 +53,4 @@ export function transform(points) {
 // 	[-8.9338, 11.5244, 12.4289],
 // 	[-11.2137, 12.6852, 14.2106],
 // ];
+>>>>>>> b67cc0623e37f64e5a0cf96156d87212273cf4cc
