@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/dev.iml" filepath="$PROJECT_DIR$/.idea/dev.iml" />
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/naloge/naloge.iml" filepath="$PROJECT_DIR$/naloge/naloge.iml" />
+=======
+>>>>>>> eeb2c414ac6d424a7684d2f2af251a4efd5801fc
     </modules>
   </component>
 </project>

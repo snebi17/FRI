@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+  <component name="ProjectRootManager">
+=======
   <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK">
+>>>>>>> eeb2c414ac6d424a7684d2f2af251a4efd5801fc
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
