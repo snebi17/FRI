@@ -20,8 +20,7 @@ body {
     height: 10vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-
+    align-items: center; 
     position: sticky;
 }
 
@@ -35,12 +34,14 @@ section {
     padding: 2rem;
 }
 
-.grid-container {
+/* .grid-container {
     display: grid;
     align-content: center;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: auto;
     gap: 1rem;
+
+    overflow-y: auto;
 }
 
 .grid-item {
@@ -74,6 +75,17 @@ section {
     top: 25px;
 }
 
+.edit-card-modal {
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    z-index: 1;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .add-card-modal form {
     display: flex;
     flex-direction: column;
@@ -92,11 +104,13 @@ section {
     width: 100%;
     height: 100%;
     background-color: #C3E8BD;
+    padding: inherit;
+    overflow-y: scroll;
 
     display: grid;
     align-content: center;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: auto;
     gap: 1rem;
 }
 
@@ -113,6 +127,73 @@ section {
 small {
     font-size: 1rem;
     font-weight: 300;
+} */
+
+.add-fab-wrapper {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+.add-fab {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px rgba(0,0,0,0.5);
+    background-color: inherit;
+}
+
+.add-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exit-modal {
+    position: fixed;
+    right: 0;
+    top: 25px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.category-wrapper, .cards-wrapper {
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    overflow-y: auto;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    grid-row: span 8;
+
+    border: 2px solid #8EB897;
+    border-radius: 1rem;
 }
 
 .btn {
@@ -122,20 +203,61 @@ small {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    color: #040403;
+    color: white;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+
+.back-btn {
+    position: fixed;
+    top: 10vh;
+    left: 5vw;
+    width: 25px;
+    height: 25px;
+    background-color: inherit;
+    border: none;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-control {
     padding: 0.5rem;
-    border: none;
-    border-radius: 25px;
 }
 
-footer {
+.error {
+    color: red;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.zero-cards {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5vh;
+    height: 100%;
+    width: 100%;
+
+}
+
+.display-none {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -144,28 +266,31 @@ footer p {
     font-weight: 300;
 }
 
-@media only screen and (min-width: 662px) {
-    .navbar {
-
-    }
-
+@media only screen and (min-width: 400px) {
     .navbar-brand {
         font-size: 3vw;
     }
 
-    .grid-container {
-        display: grid;
-        align-content: center;
+    .add-fab {
+        cursor: pointer;
+    }
+
+    .category-wrapper, .cards-wrapper {
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 1rem;
+        padding: 2rem;
     }
 
     .grid-item {
-        font-size: 2rem;
-    }
-    
-    .grid-item:hover { 
+        grid-row: span 12;
         cursor: pointer;
+    }
+
+    .grid-item:hover {
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    }
+
+    footer p {
+        font-size: 1.2rem;
+        font-weight: 300;
     }
 } 

@@ -14,5 +14,133 @@
 				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
 			}
 		]
+	},
+	{
+		"PNS": [
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
+	},
+	{
+		"MAT": [
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
+	},
+	{
+		"KPOV": [
+			{
+				"Q1": [{ "A1": "true" }, { "A2": "false" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
+	},
+	{
+		"AiPS1": [
+			{
+				"Q1": [{ "A1": "true" }, { "A2": "false" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
+	},
+	{
+		"AiPS2": [
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
+	},
+	{
+		"IS": [
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
+	},
+	{
+		"EMP": [
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
+	},
+	{
+		"P2": [
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
+	},
+	{
+		"P1": [
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			},
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			},
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			},
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
+	},
+	{
+		"OS": [
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
+	},
+	{
+		"P2": [
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
 	}
 ]

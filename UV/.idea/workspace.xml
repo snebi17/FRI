@@ -2,178 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d9e8968-88e7-4ad0-9fa0-32c241688bcd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/AiPS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/domace_naloge/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/domace_naloge/.idea/domace_naloge.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/domace_naloge/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/domace_naloge/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/domace_naloge/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/domace_naloge/Naloga1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/izzivi/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/izzivi/.idea/izzivi.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/izzivi/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/izzivi/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/izzivi/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/izzivi/Naloga1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/naloga2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/teoreticne_naloge/Naloga1/AiPS_NALOGA-1.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/teoreticne_naloge/Naloga1/AiPS_NALOGA-1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/teoreticne_naloge/Naloga1/Naloga1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/teoreticne_naloge/Naloga2/AiPS_NALOGA-2.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/teoreticne_naloge/Naloga2/AiPS_NALOGA-2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/dev/teoreticne_naloge/Naloga2/Naloga2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/predavanja_posnetki/aps1_predavanja_posnetki.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AiPS/vaje_posnetki/aps1_vaje_posnetki.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/api.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/project.razor.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/api.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/api.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/api.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/static/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/static/created.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/static/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/static/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/static/update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/.rustc_info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/CACHEDIR.TAG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/.cargo-lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/.fingerprint/http_server-9c10897441cc4203/bin-http_server" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/.fingerprint/http_server-9c10897441cc4203/bin-http_server.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/.fingerprint/http_server-9c10897441cc4203/dep-bin-http_server" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/.fingerprint/http_server-9c10897441cc4203/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/deps/http_server.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/deps/http_server.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/deps/http_server.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/http_server.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/http_server.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/http_server.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1160e52cf9resse6.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/14uqo5c6ihjq4utr.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/15bu8kq1i6zi0ljz.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/15fzt6h7az4bwein.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1ampygyb0cevbz81.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1c7bg7u85qshoin5.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1det25q6n494qt90.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1dqt36i16uptwwi5.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1dwqeq1sop5w17e9.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1egf02ga3maafm10.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1en6jcvy56yp9sti.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1h26z8wzadekd9zq.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1myv9n5bvk0jkbky.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1osty2jpwqc3hbqo.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1s9h54p67m4n158d.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1sh1aqdmjkku5z8w.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1sjuywve91is0pec.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1v18vbh5g4q7nson.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1vcir19s6sdov4bs.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1xg5ckpm0yi1bgw0.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/1ynlhlv6phl3skpr.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/22tdx7e9agokenzm.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/23ikzixgxmzti2le.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/24sepd0jne43e6nz.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/24tj4l9rjthebrz2.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/24tvqikzoq64bb3x.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/27zd1qvb20r33a26.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/28h6wvrfiz2q1zmo.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/28jqv03mjxg5xjwx.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2cz09mjyepi5vpiz.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2d33lo5wjuqt7yms.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2gfyuq8kgql6lwth.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2he7z4jyjnhbpps1.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2hv771y1rj3ikbw9.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2je1qg9s7u4i5kt.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2jnofjuptg8g2hbu.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2lvbrxmefo1xq8t9.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2lxef0c5nxk76tog.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2mperxwszq1v04yo.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2nhlnazo6ru1j23l.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2npyyn0b5qy9yxew.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2rx2eqvamdgql6uv.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2srvjhwq491sw7be.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2ssu847te36koxfs.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2x2w39smnvvhtrl9.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/2xv5u75b06d7l116.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/31tpy0fta261bbyg.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/345o5t2shrdejocv.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/35n8wp07sr9zh7mh.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/36eh2ryx5vcp0abg.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3bfk01a6xgjq2xif.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3fmet4qv7tjz0c5f.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3i16j6lhznmg1732.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3kfybh4lhdulbygd.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3ktyskyeg0vwwfwf.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3kvxdr2p9j4s4j33.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3nayxe8lpuekfpbp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3q2qjn6d3lf0oq37.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3skue9co847i87zy.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3t6hgzy0cqyvattc.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3wy38o0g3ivic38o.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3y2j9cw8swqal04a.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/3zrwpej5dhkmq71z.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/408fmw6wb07nnh6t.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/43yqkc3yna5jldbr.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/49gtl7q65u6haf2g.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/49t8g2m586izygl.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/4gkn2kc234dpf6qc.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/4j3cpe5mmv67rb3r.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/4jn628r1632pg66f.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/4l24jugfebaw5e0k.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/4qgnsvn09fou5qci.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/4qp3lioywqxalx9r.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/4rcsbjm412kft3uk.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/4tx7z2qc79pnugq8.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/4uaqb90sscycm85d.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/4vlol7u0ym172n2.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/50dwvrsnxmw5vnl5.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/553dfhtcysvv9n8d.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/56djwgqlon4u2fai.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/58h7digzqs2q6u0y.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/5angiwpz5tspyh3v.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/5cpkgg9vyu36adt1.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/5r9tbbm4canttm2.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/6ds36pjzqrqkq7z.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/dep-graph.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/fwxgfu1yy642g2.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/h1xt9wyff8t874x.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/mvre3hveocd8dxr.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/query-cache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/touixo1z9nchphf.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/ukepkxu0h4xerel.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/vn3776dv8bn8tr5.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/work-products.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w-g3avrpy7fqd9/xpb9ff6le8rgor9.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KPOV/dev/http_server/target/debug/incremental/http_server-3amz72vgs6yjm/s-getrgbz01n-15ron8w.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OR/dev/2_naloga.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OR/dev/2_naloga/naloga1.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OR/dev/2_naloga/naloga2.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OR/dev/2_naloga/naloga3.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OR/dev/2_naloga/naloga4.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RG/dev/rg1/rg1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AiPS/snov/Algoritmi in Podatkovne Strukture" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OR/dev/MiMo_Student_Release" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OR/dev/ORLab-STM32H7" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../3D-Game" beforeDir="false" afterPath="$PROJECT_DIR$/../3D-Game" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RG/dev/rg1/Matrix.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../RG/dev/rg1/Matrix.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RG/dev/rg1/Vector.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../RG/dev/rg1/Vector.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RG/dev/rg1/main.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../RG/dev/rg1/main.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RG/dev/rg1/transform.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../RG/dev/rg1/transform.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AiPS/dev/izzivi/Naloga1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EMP/dev/Projekt" beforeDir="false" afterPath="$PROJECT_DIR$/../EMP/dev/Projekt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/Projekt/SocialNetworkAPI" beforeDir="false" afterPath="$PROJECT_DIR$/../IS/dev/Projekt/SocialNetworkAPI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/Debug/net6.0/api.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/api.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/api.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/api.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IS/dev/seminarska_naloga/api/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OR/dev/2_naloga/naloga1.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OR/dev/2_naloga/naloga2.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OR/dev/2_naloga/naloga3.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OR/dev/2_naloga/naloga4.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PNS" beforeDir="false" afterPath="$PROJECT_DIR$/../PNS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ST/dev/Homework1/card.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ST/dev/Homework1/card.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ST/dev/Homework1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ST/dev/Homework1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ST/dev/Homework1/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ST/dev/Homework1/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ST/dev/Homework1/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ST/dev/Homework1/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +49,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -203,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679080075561</updated>
       <workItem from="1679080075770" duration="24000" />
+      <workItem from="1681471325546" duration="27000" />
     </task>
     <servers />
   </component>

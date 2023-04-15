@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+
+<BorderPane fx:id="rootPane" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: linear-gradient( to top left,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% ); -fx-background-radius: 25px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labs.lab4.HelloController">
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="BOTTOM_CENTER">
+        <buttons>
+            <Button fx:id="prevButton" mnemonicParsing="false" text="Previous" />
+          <Button fx:id="nextButton" mnemonicParsing="false" text="Next" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+   <padding>
+      <Insets left="150.0" right="150.0" top="40.0" />
+   </padding>
+   <center>
+      <GridPane fx:id="contentWrapper" alignment="CENTER" style="-fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);;" BorderPane.alignment="CENTER">
+<!--        <columnConstraints>-->
+<!--          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
+<!--        </columnConstraints>-->
+<!--        <rowConstraints>-->
+<!--          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--        </rowConstraints>-->
+      </GridPane>
+   </center>
+</BorderPane>

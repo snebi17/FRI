@@ -18,27 +18,43 @@
 <body>
     <nav class="navbar">
         <div class="navbar-brand">Flashcards</div>
-        </div>
     </nav>
-    <section class="grid-container" id="cards">
-        <div class="add-card-modal display-none" id="add-modal">
+    <section class="grid-container">
+        <!-- <div class="add-card-modal display-none" id="add-modal">
             <button class="btn exit-card-modal" id="exit-modal">
                 <li class="fa-solid fa-2x fa-xmark"></li>
             </button>
             <form id="add-form">
-                <input type="text" class="form-control" id="category-name">
+                <input type="text" class="form-control" placeholder="Category..." id="category-name">
                 <button class="btn" type="submit">Add category</button>
             </form>
         </div>
         <div class="show-cards-modal display-none" id="cards-modal">
-            <button class="btn back-card-modal" id="back-modal">
+            <button class=" btn back-card-modal" id="back-modal">
                 <i class="fa-solid fa-2x fa-arrow-left"></i>
             </button>
             <form id="add-form" class="display-none">
-                <input type="text" class="form-control" placeholder="Question" id="card-question">
-                <input type="text" class="form-control" placeholder="Answer" id="card-answer">
-                <button class="btn" type="submit">Add card</button>
+                <input type="text" class="form-control" id="card-question">
+                <div class="answers-wrapper" id="card-answers">
+                    <input type="text" id="card-answer">
+                    <button class="btn" onclick="multipleAnswers"></button>
+                </div>
+                <button class="btn" onclick="addCard">Add card</button>
+                <button class="btn" onclick="deleteCard">Delete card</button>
             </form>
+            <form id="edit-form" class="display-none">
+            </form>
+        </div> -->
+        <div class="category-wrapper" id="categories">
+
+        </div>
+        <div class="cards-wrapper" id="cards">
+
+        </div>
+        <div class="add-fab-wrapper" id="add-fab">
+            <button class="add-fab">
+                <i class="fa-solid fa-plus"></i>
+            </button>
         </div>
     </section>
     <footer>
