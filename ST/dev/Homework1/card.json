@@ -94,5 +94,53 @@
 				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
 			}
 		]
+	},
+	{
+		"P1": [
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			},
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			},
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			},
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
+	},
+	{
+		"OS": [
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
+	},
+	{
+		"P2": [
+			{
+				"Q1": [{ "A1": "false" }, { "A2": "true" }, { "A3": "false" }]
+			},
+			{
+				"Q2": [{ "A1": "false" }, { "A2": "false" }, { "A3": "true" }]
+			}
+		]
 	}
 ]
