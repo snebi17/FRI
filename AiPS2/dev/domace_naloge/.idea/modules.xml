@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/naloge.iml" filepath="$PROJECT_DIR$/naloge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domace_naloge.iml" filepath="$PROJECT_DIR$/domace_naloge.iml" />
     </modules>
   </component>
 </project>

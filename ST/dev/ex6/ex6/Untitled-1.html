@@ -1,0 +1,36 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <script>
+      $(document).ready(function(){
+        $("tr:first-child").css({"background-color": "green", "font-size": "20pt"});      
+        $("tr:nth-child(2n+2)").css("background-color","yellow");       
+        $("#tabela tr:nth-child(2n+3)").css("font", "small-caps oblique bolder 16pt Arial Helvetica sans-serif");      
+        $("#gumb").hide();      
+        $("table").click(function(){ 
+                $("#gumb").show(); 
+              });      
+              $("#gumb").click(function(){      
+                $("div").animate({
+                  left: '250px',                        
+                    opacity:'0.5',                         
+                    height: '150px',                         
+                    width:'150px'
+                });      
+                $("table").animate({
+                  left: '50px',                           
+                  opacity:'1.0',                           
+                  height: '250px',                           
+                  width:'250px'
+                });      
+              }); 
+        });
+        </script>
+  </head>
+  <body>
+    <h1>Določanje stilov z uporabo jQuery knjižnice</h1>
+    <div><p>Jaz sem eno besedilo, ki plava</p></div>
+    ---- <input id="gumb" type="button" value="Prestavi" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>  
+  </body>
+</html>

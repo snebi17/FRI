@@ -6,12 +6,12 @@ public class ArrArray {
     // null ... prazen element, -1 ... leno brisan element
 
     private static Integer[][] array;
-    private static int[] duplicates;
+    private static int[] occurenceCounter;
     private static int size;
     private static int[] bloomFilter;
 
-    public static void main(String[] args) {
-        array = new Integer[1][1];
+    ArrArray() {
+        array = new Integer[2][2];
         size = 0;
         bloomFilter = new int[10];
     }
@@ -28,17 +28,16 @@ public class ArrArray {
 
             }
         }
+
+        size++;
     }
 
     // Buggy fix
     public boolean find(int e) {
         if (!elementInArray(e)) return false;
 
-        if (array[0][0] == e) return true;
-        if (array[1][0] == e || array[1][1] == e) return true;
-
         int k = (int) Math.floor(Math.log(size) / Math.log(2) + 1);
-        for (int i = 2; i < k; i++) {
+        for (int i = 0; i < k; i++) {
             int low = 0;
             int high = (int) Math.pow(2, i) - 1;
 
@@ -64,12 +63,9 @@ public class ArrArray {
             array[0][0] = -1;
             return true;
         }
-        if (array[1][0] == e || array[1][1] == e) {
-            if (array[1][0] == e )
-            return true;
-        }
 
         int k = (int) Math.floor(Math.log(size) / Math.log(2) + 1);
+
         for (int i = 2; i < k; i++) {
             int low = 0;
             int high = (int) Math.pow(2, i) - 1;
@@ -78,7 +74,15 @@ public class ArrArray {
 
             while (low <= high) {
                 int j = low + ((high - low) / 2);
-                if (array[i][j] == e) return true;
+                if (array[i][j] == e) {
+                    if (duplicates[e] > 0) {
+                        duplicates[e]--;
+                    } else {
+                        array[i][j] = -1;
+                    }
+                    size--;
+                    return true;
+                }
                 if (array[i][j] < e) {
                     low = j + 1;
                 } else if (array[i][j] > e) {

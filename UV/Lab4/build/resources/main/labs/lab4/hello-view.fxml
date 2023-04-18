@@ -2,30 +2,364 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="rootPane" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: linear-gradient( to top left,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% ); -fx-background-radius: 25px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labs.lab4.HelloController">
+<BorderPane prefHeight="800.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labs.lab4.HelloController">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+              <items>
+                  <Button mnemonicParsing="false" text="Prikaži potrdilo" />
+              </items>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </ToolBar>
+         </children>
+      </VBox>
+   </top>
    <bottom>
-      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="BOTTOM_CENTER">
-        <buttons>
-            <Button fx:id="prevButton" mnemonicParsing="false" text="Previous" />
-          <Button fx:id="nextButton" mnemonicParsing="false" text="Next" />
-        </buttons>
-      </ButtonBar>
+      <HBox alignment="CENTER_RIGHT" spacing="10.0">
+         <children>
+            <ProgressIndicator fx:id="statusNapredka" progress="0.0" />
+            <Button fx:id="posljiPodatke" lineSpacing="10.0" mnemonicParsing="false" onAction="#onSubmit" text="Pošlji podatke">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
    </bottom>
-   <padding>
-      <Insets left="150.0" right="150.0" top="40.0" />
-   </padding>
    <center>
-      <GridPane fx:id="contentWrapper" alignment="CENTER" BorderPane.alignment="CENTER">
-<!--        <columnConstraints>-->
-<!--          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />-->
-<!--        </columnConstraints>-->
-<!--        <rowConstraints>-->
-<!--          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
-<!--        </rowConstraints>-->
-      </GridPane>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane gridLinesVisible="true">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <HBox alignment="CENTER" spacing="10.0" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Datum najema in lokacija prevzema">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Od" />
+                                    <DatePicker fx:id="datumOd" onAction="#addToSet" onInputMethodTextChanged="#addToSet" />
+                                    <Spinner fx:id="casOdUre" editable="true" onMouseClicked="#addToSet" prefHeight="25.0" prefWidth="55.0" />
+                                    <Spinner fx:id="casOdMinute" editable="true" layoutX="221.0" layoutY="43.0" onMouseClicked="#addToSet" prefHeight="25.0" prefWidth="55.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Do" />
+                                    <DatePicker fx:id="datumDo" onAction="#addToSet" />
+                                    <Spinner fx:id="casDoUre" editable="true" onMouseClicked="#addToSet" prefHeight="13.0" prefWidth="55.0" />
+                                    <Spinner fx:id="casDoMinute" editable="true" layoutX="220.0" layoutY="43.0" onMouseClicked="#addToSet" prefHeight="13.0" prefWidth="55.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Lokacija prevzema" />
+                                    <ComboBox fx:id="lokacijaPrevzema" onAction="#addToSet" prefWidth="150.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Podatki o avtomobilu">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Znamka avta">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ComboBox fx:id="znamkaAvta" onAction="#addToSet" prefWidth="150.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Model avta">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ComboBox fx:id="modelAvta" onAction="#addToSet" prefWidth="150.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Vrsta motorja">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <RadioButton fx:id="vrstaBencin" mnemonicParsing="false" onAction="#addToSet" text="Bencin" />
+                                    <RadioButton fx:id="vrstaDizel" mnemonicParsing="false" onAction="#addToSet" text="Dizel" />
+                                    <RadioButton fx:id="vrstaElektrika" mnemonicParsing="false" onAction="#addToSet" text="Elektrika" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Vrsta menjalnika">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <RadioButton fx:id="menjalnikRocni" mnemonicParsing="false" onAction="#addToSet" text="Ročni" />
+                                    <RadioButton fx:id="menjalnikAvtomatski" mnemonicParsing="false" onAction="#addToSet" text="Avtomatski" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="10.0" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Podatki o najemniku">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Ime" />
+                                    <TextField fx:id="imeNajemnika" onAction="#addToSet" />
+                                    <Label text="Priimek" />
+                                    <TextField fx:id="priimekNajemnika" onAction="#addToSet" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Naslov" />
+                                    <TextField fx:id="naslovNajemnika" onAction="#addToSet" />
+                                    <Label text="Hišna št." />
+                                    <TextField fx:id="hisnaSt" onAction="#addToSet" prefWidth="50.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Kraj" />
+                                    <TextField fx:id="krajNajemnika" onAction="#addToSet" />
+                                    <Label text="Poštna št." />
+                                    <TextField fx:id="postnaSt" onAction="#addToSet" prefWidth="50.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox />
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Label text="E-mail" />
+                                    <TextField fx:id="eMail" onAction="#addToSet" />
+                                    <Label text="Tel. št." />
+                                    <TextField fx:id="telSt" onAction="#addToSet" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Datum rojstva" />
+                                    <DatePicker fx:id="datumRojstva" onAction="#addToSet" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="21.0" layoutY="264.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="28.0" text="Datum pridobitve izpita" />
+                                    <DatePicker fx:id="datumPridobitveIzpita" layoutX="95.0" layoutY="24.0" onAction="#addToSet" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Zaključek najema">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER_LEFT" layoutX="21.0" layoutY="52.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Dodatno zavarovanje" />
+                                    <RadioButton fx:id="dodZavDa" mnemonicParsing="false" onAction="#addToSet" text="Da" />
+                                    <RadioButton fx:id="dodZavNe" mnemonicParsing="false" onAction="#addToSet" text="Ne" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Način plačila" />
+                                    <RadioButton fx:id="placiloKartica" mnemonicParsing="false" onAction="#addToSet" text="Kartica" />
+                                    <RadioButton fx:id="placiloGotovina" mnemonicParsing="false" onAction="#addToSet" text="Gotovina" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Številka kartice" />
+                                    <TextField fx:id="stKartice" onAction="#addToSet" />
+                                    <Label text="CCV" />
+                                    <TextField fx:id="CCV" onAction="#addToSet" prefWidth="50.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="10.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Skupno (z DDV):" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
    </center>
 </BorderPane>
