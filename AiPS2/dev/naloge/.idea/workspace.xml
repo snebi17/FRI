@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa8d8171-ecfa-4d1e-8af9-b71d19148d4a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../3D-Game" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AiPS/AiPS_NALOGA-1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AiPS/dev/naloga1/pseudocode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ADT.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Domača naloga 1/naloge/ArrArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../EMP/dev/Projekt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../OR/dev/naloga1.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../RG/Blender/source/Sketchfab_2022_04_30_13_07_42.blend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../RG/Blender/textures/Carpet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../RG/Blender/textures/Ceiling2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../RG/Blender/textures/Piece_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../RG/Blender/textures/Vents.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../RG/Blender/textures/Walls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../RG/Vaje/Vector.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/Lab5/Lab5/Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/Lab5/Lab5/BookDB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/Lab5/Lab5/all-books.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/Lab5/Lab5/app/UserDB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/Lab5/Lab5/app/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/Lab5/Lab5/app/db_user.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/Lab5/Lab5/app/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/Lab5/Lab5/app/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/Lab5/Lab5/book-detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/Lab5/Lab5/check-prime.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/Lab5/Lab5/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/Lab5/Lab5/search-books.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/.idea/ex6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/ex6/book/BookDB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/ex6/book/DBInit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/ex6/book/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/ex6/book/detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/ex6/book/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/ex6/book/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/ex6/book/search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/ex6/book/sql/db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/ex6/params/get-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/ex6/params/post-form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ST/dev/ex6/ex6/params/process-get-request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/.idea/UV.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/7.3.3/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/7.3.3/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/7.3.3/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/7.3.3/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/7.3.3/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/build/classes/java/main/lab1/lab1/HelloApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/build/classes/java/main/lab1/lab1/HelloController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/build/classes/java/main/module-info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/build/libs/Lab1-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/build/resources/main/lab1/lab1/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/src/main/java/lab1/lab1/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/src/main/java/lab1/lab1/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab1/src/main/resources/lab1/lab1/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/7.3.3/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/7.3.3/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/7.3.3/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/7.3.3/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/7.3.3/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/build/classes/java/main/lab/lab/lab2/HelloApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/build/classes/java/main/lab/lab/lab2/HelloController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/build/classes/java/main/lab/lab/lab2/HelloController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/build/classes/java/main/module-info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/build/libs/Lab2-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/build/resources/main/lab/lab/lab2/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/src/main/java/lab/lab/lab2/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/src/main/java/lab/lab/lab2/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab2/src/main/resources/lab/lab/lab2/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/7.3.3/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/7.3.3/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/7.3.3/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/Lab3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/build/classes/java/main/com/example/lab3/HelloApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/build/classes/java/main/com/example/lab3/HelloController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/build/classes/java/main/module-info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/build/libs/Lab3-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/build/resources/main/com/example/lab3/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/src/main/java/com/example/lab3/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/src/main/java/com/example/lab3/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab3/src/main/resources/com/example/lab3/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/7.3.3/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/7.3.3/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/7.3.3/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/classes/java/main/labs/lab4/HelloApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/classes/java/main/labs/lab4/HelloController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/classes/java/main/labs/lab4/HelloController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/classes/java/main/module-info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/libs/Lab4-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/resources/main/labs/lab4/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/resources/main/labs/lab4/steps/step-eight.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/resources/main/labs/lab4/steps/step-five.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/resources/main/labs/lab4/steps/step-four.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/resources/main/labs/lab4/steps/step-one.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/resources/main/labs/lab4/steps/step-seven.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/resources/main/labs/lab4/steps/step-six.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/resources/main/labs/lab4/steps/step-three.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/resources/main/labs/lab4/steps/step-two.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/resources/main/neumorphism.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/java/labs/lab4/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/java/labs/lab4/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/resources/labs/lab4/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/resources/labs/lab4/steps/step-eight.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/resources/labs/lab4/steps/step-five.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/resources/labs/lab4/steps/step-four.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/resources/labs/lab4/steps/step-one.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/resources/labs/lab4/steps/step-seven.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/resources/labs/lab4/steps/step-six.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/resources/labs/lab4/steps/step-three.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/resources/labs/lab4/steps/step-two.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/Lab4/src/main/resources/neumorphism.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-console-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-console-l1-2-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-datetime-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-debug-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-errorhandling-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-file-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-file-l1-2-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-file-l2-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-handle-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-heap-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-interlocked-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-libraryloader-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-localization-l1-2-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-memory-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-namedpipe-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-processenvironment-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-processthreads-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-processthreads-l1-1-1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-profile-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-rtlsupport-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-string-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-synch-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-synch-l1-2-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-sysinfo-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-timezone-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-core-util-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-conio-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-convert-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-environment-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-filesystem-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-heap-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-locale-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-math-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-multibyte-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-private-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-process-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-runtime-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-stdio-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-string-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-time-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/api-ms-win-crt-utility-l1-1-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/decora_sse.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/fxplugins.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/glass.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/glib-lite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/gstreamer-lite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/javafx_font.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/javafx_iio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/jfxmedia.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/jfxwebkit.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/msvcp140.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/msvcp140_1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/msvcp140_2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/prism_common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/prism_d3d.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/prism_sw.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/ucrtbase.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/vcruntime140.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/bin/vcruntime140_1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.base/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.base/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.base/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.controls/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.controls/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.controls/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.fxml/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.fxml/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.fxml/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.graphics/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.graphics/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.graphics/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.graphics/jpeg_fx.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.graphics/mesa3d.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.media/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.media/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.media/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.media/directshow.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.media/glib.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.media/gstreamer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.media/libffi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.swing/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.swing/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.swing/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.web/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.web/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.web/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.web/icu_web.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.web/libxml2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.web/libxslt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/legal/javafx.web/webkit.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/lib/javafx-swt.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/lib/javafx.base.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/lib/javafx.controls.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/lib/javafx.fxml.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/lib/javafx.graphics.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/lib/javafx.media.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/lib/javafx.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/lib/javafx.swing.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/lib/javafx.web.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/javafx-sdk-19.0.2.1/src.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../UV/principi.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AiPS/snov/Algoritmi in Podatkovne Strukture" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AiPS/snov/Algoritmi in Podatkovne Strukture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/dev.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/naloge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/naloge.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../IS/dev/Projekt/SocialNetworkAPI" beforeDir="false" afterPath="$PROJECT_DIR$/../../../IS/dev/Projekt/SocialNetworkAPI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../IS/dev/Projekt/SocialNetworkWebApp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../IS/dev/Projekt/SocialNetworkWebApp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../OR/dev/ORLab-STM32H7" beforeDir="false" afterPath="$PROJECT_DIR$/../../../OR/dev/ORLab-STM32H7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PNS" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PNS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RG/dev/rg1/Matrix.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RG/dev/rg1/Matrix.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RG/dev/rg1/Vector.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RG/dev/rg1/Vector.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RG/dev/rg1/main.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RG/dev/rg1/main.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../RG/dev/rg1/transform.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../RG/dev/rg1/transform.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ST/dev/Homework1.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ST/dev/Homework1.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ST/dev/Homework1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ST/dev/Homework1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ST/dev/Homework1/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ST/dev/Homework1/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ST/dev/Homework1/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ST/dev/Homework1/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OSZbTB58wRxnNmKuZIoUneW38Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa8d8171-ecfa-4d1e-8af9-b71d19148d4a" name="Changes" comment="" />
+      <created>1681556020213</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681556020213</updated>
+      <workItem from="1681556026103" duration="88000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
