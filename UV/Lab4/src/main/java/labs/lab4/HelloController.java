@@ -1,5 +1,6 @@
 package labs.lab4;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
@@ -11,6 +12,7 @@ import javafx.scene.control.*;
 import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
@@ -24,7 +26,7 @@ public class HelloController implements Initializable {
     private ToggleGroup dodatnoZavarovanje;
     private ToggleGroup nacinPlacila;
 
-    private Set<Node> izbrani = new HashSet<>();
+    private List<Node> izbrani = new ArrayList<>();
 
     @FXML
     private DatePicker datumOd;
@@ -55,7 +57,7 @@ public class HelloController implements Initializable {
     @FXML
     private RadioButton menjalnikAvtomatski;
     @FXML
-    private TextField cenaNajema;
+    private Label cenaNajema;
     @FXML
     private TextField imeNajemnika;
     @FXML
@@ -89,14 +91,16 @@ public class HelloController implements Initializable {
     @FXML
     private TextField CCV;
     @FXML
-    private Button posljiPodatke;
-    @FXML
-    private ProgressIndicator statusNapredka;
+    private Label porociloNajema;
 
     @FXML
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        datumDo.setOnAction(e -> {
+            if (datumOd.getValue() != null) {
+                calculatePrice();
+            }
+        });
         initializeComboBox();
         initializeRadioButtons();
         initializeSpinners();
@@ -156,6 +160,14 @@ public class HelloController implements Initializable {
         for (String lokacija : znamkeAvtomobilov) {
             znamkaAvta.getItems().add(lokacija);
         }
+
+        znamkaAvta.setOnAction(e -> {
+            String selected = znamkaAvta.getSelectionModel().getSelectedItem().toString();
+            modelAvta.getItems().clear();
+            modeliAvtomobilov.get(selected).forEach(model -> {
+                modelAvta.getItems().add(model);
+            });
+        });
     }
 
     private void initializeRadioButtons() {
@@ -165,8 +177,8 @@ public class HelloController implements Initializable {
         vrstaElektrika.setToggleGroup(vrstaMotorja);
 
         vrstaMenjalnika = new ToggleGroup();
-        menjalnikRocni.setToggleGroup(vrstaMotorja);
-        menjalnikAvtomatski.setToggleGroup(vrstaMotorja);
+        menjalnikRocni.setToggleGroup(vrstaMenjalnika);
+        menjalnikAvtomatski.setToggleGroup(vrstaMenjalnika);
 
         dodatnoZavarovanje = new ToggleGroup();
         dodZavDa.setToggleGroup(dodatnoZavarovanje);
@@ -208,6 +220,16 @@ public class HelloController implements Initializable {
             }
         });
 
+        eMail.focusedProperty().addListener((arg0, oldValue, newValue) -> {
+            if (!newValue) {
+                if (!eMail.getText().matches("^[a-zA-Z0-9]+(?:\\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\\.[a-zA-Z0-9]+)*$")) {
+                    eMail.setStyle("-fx-border-color: red; -fx-border-width: 1px; -fx-text-fill: red;");
+                } else {
+                    eMail.setStyle("");
+                }
+            }
+        });
+
         stKartice.focusedProperty().addListener((arg0, oldValue, newValue) -> {
             if (!newValue) {
                 if (!stKartice.getText().matches("^([0-9]{4})-([0-9]{4})-([0-9]{4})-([0-9]{4})$")) {
@@ -240,22 +262,50 @@ public class HelloController implements Initializable {
     }
 
     public void onSubmit(ActionEvent e) {
-        if (izbrani.size() == 30) {
+        if (izbrani.size() < 27) {
+            try {
+                Date dateFrom = new SimpleDateFormat("yyyy-mm-dd").parse(datumOd.getValue().toString());
+                Date dateTo = new SimpleDateFormat("yyyy-mm-dd").parse(datumDo.getValue().toString());
 
+                long diffInMillies = Math.abs(dateFrom.getTime() - dateTo.getTime());
+                long diff = TimeUnit.DAYS.convert(diffInMillies, TimeUnit.MILLISECONDS);
+
+                RadioButton selectedRadioButton = (RadioButton) nacinPlacila.getSelectedToggle();
+                String toggleGroupValue = selectedRadioButton.getText();
+
+                String s = String.format("%s\n\n%s\n%s\n%s",
+                        "Poročilo o najemu:",
+                        String.format("Ime, priimek: %s, %s", imeNajemnika.getText(), priimekNajemnika.getText()),
+                        String.format("Datum najema: %s do %s (%d dni)", dateFrom.toString(), dateTo.toString(), diff),
+                        toggleGroupValue.equals("Kartica") ? String.format("Številka kartice: XXXX-XXXX-XXXX-%s", stKartice.getText(10, 14)) : "Plačilo z gotovino");
+                porociloNajema.setText(s);
+
+            } catch (ParseException parseException) {
+                System.out.println(parseException);
+            }
+        } else {
+            porociloNajema.setText("Prosimo izpolnite vsa polja!");
+            porociloNajema.setStyle("-fx-text-fill: red;");
         }
-        // create a PDF using those values
     }
 
     private void calculatePrice()  {
         try {
-            Date dateFrom = new SimpleDateFormat("mm/dd/yyyy").parse(datumOd.getPromptText());
-            Date dateTo = new SimpleDateFormat("mm/dd/yyyy").parse(datumDo.getPromptText());
+            Date dateFrom = new SimpleDateFormat("yyyy-mm-dd").parse(datumOd.getValue().toString());
+            Date dateTo = new SimpleDateFormat("yyyy-mm-dd").parse(datumDo.getValue().toString());
+            if (dateTo.getTime() < dateFrom.getTime()) {
+                datumOd.setStyle("-fx-border-color: red; -fx-border-width: 1px; -fx-text-fill: red;");
+                datumDo.setStyle("-fx-border-color: red; -fx-border-width: 1px; -fx-text-fill: red;");
+                return;
+            }
+            datumOd.setStyle("");
+            datumDo.setStyle("");
             long diffInMillies = Math.abs(dateFrom.getTime() - dateTo.getTime());
             long diff = TimeUnit.DAYS.convert(diffInMillies, TimeUnit.MILLISECONDS);
 
             int cena = (int) Math.floor(diff * 100);
             int cenaZavarovanja = (dodZavDa.isSelected()) ? (int) Math.floor(diff * 100) : 0;
-            cenaNajema.setText(String.valueOf(cena + cenaZavarovanja));
+            cenaNajema.setText(String.valueOf(cena + cenaZavarovanja) + "€ (cena najema je 100€/dan)");
         } catch (ParseException e) {
             System.out.println(e);
         }
@@ -263,7 +313,7 @@ public class HelloController implements Initializable {
 
     public void addToSet(ActionEvent e) {
         izbrani.add((Node) e.getSource());
-        double trenutniStatus = statusNapredka.getProgress();
-        statusNapredka.setProgress(trenutniStatus + 1 / 30);
+//        double trenutniStatus = statusNapredka.getProgress();
+//        statusNapredka.setProgress(trenutniStatus + 1 / 30);
     }
 }
