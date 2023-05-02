@@ -1,17 +1,20 @@
 package naloge;
-
+đ
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ArrArray {
-    // null ... prazen element, -1 ... leno brisan element
-    private static List<ArrayElement[]> array;
+    private static List<Element[]> array;
     private static int size;
+
+    private static List<Integer> duplicateElements;
     private static int[] bloomFilter;
 
     ArrArray() {
-        array = new ArrayList<>();
+        array = new ArrayList<>(1);
         size = 0;
+        duplicateElements = new ArrayList<>();
         bloomFilter = new int[10];
     }
 
@@ -20,13 +23,15 @@ public class ArrArray {
             hash(e);
         }
 
+
         int k = (int) Math.floor(Math.log(size) / Math.log(2) + 1);
         for (int i = 0; i < k; i++) {
-            int levelSize = (int) Math.pow(2, i);
-            if ((size & levelSize) == levelSize) {
+            if (isEmpty(i)) {
 
             }
         }
+
+        duplicateElements.add(new Element(e));
 
         size++;
     }
@@ -38,7 +43,7 @@ public class ArrArray {
         int k = (int) Math.floor(Math.log(size) / Math.log(2) + 1);
         for (int i = 0; i < k; i++) {
             // if A_i is empty continue
-
+            if (isEmpty(i)) continue;
 
             int low = 0;
             int high = (int) Math.pow(2, i) - 1;
@@ -106,14 +111,14 @@ public class ArrArray {
             System.out.printf("%s%d:", "A_", i);
             if (!isEmpty(i)) {
                 if (array.get(i)[0].getValue() != null) {
-                    System.out.printf("%d/%d", array.get(i)[0].getValue(), array.get(i)[0].getCounter());
+//                    System.out.printf("%d/%d", array.get(i)[0].getValue(), array.get(i)[0].getDuplicateCounter());
                 } else if (array.get(i)[0].isDeleted) {
                     System.out.printf("x");
                 }
                 for (int j = 1; j < (int) Math.pow(2, i); j++) {
                     if (array.get(i)[j].getValue() != null) {
-                        System.out.printf(", %d/%d", array.get(i)[j].getValue(), array.get(i).getCounter());
-                    } else if (array.get(i)[j].compareTo(-1) == 0) {
+//                        System.out.printf(", %d/%d", array.get(i)[j].getValue(), array.get(i)[j].getDuplicateCounter());
+                    } else if (array.get(i)[j].isDeleted) {
                         System.out.printf(", x");
                     }
                 }
@@ -137,7 +142,6 @@ public class ArrArray {
         }
     }
 
-
     private boolean elementInArray(int e) {
         while (e > 1) {
             if (bloomFilter[e % 10] == 0) return false;
@@ -146,7 +150,16 @@ public class ArrArray {
         return true;
     }
 
-    private static void resize() {
+    private void getDuplicateCount(Element e) {
+        duplicateElements.stream()
+                .collect(Collectors.groupingBy(Element::getValue, Collectors.counting()))
+                .values()
+                .stream()
+                .filter(value -> value.intValue() == e.getValue())
+                .count();
+    }
+
+    private static void refactor() {
 
     }
 
@@ -154,13 +167,14 @@ public class ArrArray {
 
     }
 
-    class ArrayElement implements Comparable<Integer> {
+    class Element implements Comparable<Integer> {
         private Integer value;
-        int duplicateCounter;
+//        int duplicateCounter;
         boolean isDeleted;
 
-        ArrayElement() {
-            duplicateCounter = 0;
+        Element(Integer value) {
+            this.value = value;
+//            duplicateCounter = 0;
             isDeleted = false;
         }
 
@@ -178,16 +192,22 @@ public class ArrArray {
         }
 
         public void setDuplicateCounter(int x) {
-            duplicateCounter += x;
+//            duplicateCounter += x;
         }
 
-        public int getDuplicateCounter() {
-            return duplicateCounter;
-        }
+//        public int getDuplicateCounter() {
+//            return duplicateCounter;
+//        }
 
         public void lazyDelete() {
             isDeleted = true;
-            duplicateCounter--;
+//            duplicateCounter--;
+        }
+    }
+
+    class TypeCastException extends Exception {
+        TypeCastException(String errorMessage) {
+            super(errorMessage);
         }
     }
 }
