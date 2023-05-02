@@ -2,6 +2,7 @@ package naloge;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ArrArray {
@@ -45,7 +46,6 @@ public class ArrArray {
             size++;
             return;
         }
-
         /**
          * Časovna kompleksnost: O(n log n)
          */
@@ -56,17 +56,13 @@ public class ArrArray {
                     merge(e);
                     return;
                 }
-                if (array.get(i)[j] == null || array.get(i)[j].isDeleted) {
+                /*if (array.get(i)[j] == null || array.get(i)[j].isDeleted) {
                     array.get(i)[j] = new ArrayElement(e);
                     size++;
-                    if ((int) Math.floor(Math.log(size) / Math.log(2)) > array.size()) {
-                        merge(e);
-                    }
                     return;
-                }
+                }*/
             }
         }
-
     }
 
     /***
@@ -152,7 +148,7 @@ public class ArrArray {
                 for (int j = 1; j < (int) Math.pow(2, i); j++) {
                     if (array.get(i)[j] != null) {
                         System.out.printf(", %d/%d", array.get(i)[j].getValue(), array.get(i)[j].getDuplicateCounter());
-                    } else if (array.get(i)[j].isDeleted) {
+                    } else if (array.get(i)[j] != null && array.get(i)[j].isDeleted) {
                         System.out.printf(", x");
                     }
                 }
@@ -190,10 +186,6 @@ public class ArrArray {
         }
     }
 
-    private void resize() {
-
-    }
-
     private void merge(int e) {
         int k = array.size();
         int n = (int) Math.pow(2, k);
@@ -211,6 +203,7 @@ public class ArrArray {
         }
 
         mergedArray[n - 1] = new ArrayElement(e);
+        size++;
         array.add(mergedArray);
     }
 
