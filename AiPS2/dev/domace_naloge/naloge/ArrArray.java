@@ -1,13 +1,49 @@
 package naloge;
+<<<<<<< HEAD
 import java.util.*;
+=======
+<<<<<<< HEAD
+đ
+=======
+
+import java.lang.reflect.Array;
+>>>>>>> 09808f6d364c43a6c9520b0011c73bc63d4b15a0
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+>>>>>>> 5e5d9d65b464d360cb8541fb1768999cc37baf94
 
 public class ArrArray {
+<<<<<<< HEAD
+    private static List<Element[]> array;
+=======
     private static List<ArrayElement[]> array;
+<<<<<<< HEAD
     private int size;
     private static int[] bloomFilter;
 
     public ArrArray() {
         array = new ArrayList<>();
+=======
+>>>>>>> 09808f6d364c43a6c9520b0011c73bc63d4b15a0
+    private static int size;
+
+    private static List<Integer> duplicateElements;
+    private static int[] bloomFilter;
+
+<<<<<<< HEAD
+    ArrArray() {
+        array = new ArrayList<>(1);
+=======
+    private static List<ArrayElement> duplicatedInstances;
+
+    public ArrArray() {
+        array = new ArrayList<>();
+>>>>>>> 09808f6d364c43a6c9520b0011c73bc63d4b15a0
+        size = 0;
+        duplicateElements = new ArrayList<>();
+>>>>>>> 5e5d9d65b464d360cb8541fb1768999cc37baf94
         bloomFilter = new int[10];
     }
 
@@ -24,6 +60,19 @@ public class ArrArray {
             return;
         }
 
+<<<<<<< HEAD
+
+        int k = (int) Math.floor(Math.log(size) / Math.log(2) + 1);
+        for (int i = 0; i < k; i++) {
+            if (isEmpty(i)) {
+
+            }
+        }
+
+        duplicateElements.add(new Element(e));
+
+        size++;
+=======
         if (size == 0) {
             array.add(new ArrayElement[] { new ArrayElement(e) });
             size++;
@@ -49,6 +98,7 @@ public class ArrArray {
                 }
             }
         }
+<<<<<<< HEAD
         if (((size + 1) & 1) == 0) {
             int level = 0;
             int l = 1;
@@ -61,6 +111,9 @@ public class ArrArray {
             array.set(0, tmp);
             size++;
         }
+=======
+>>>>>>> 09808f6d364c43a6c9520b0011c73bc63d4b15a0
+>>>>>>> 5e5d9d65b464d360cb8541fb1768999cc37baf94
     }
 
     /**
@@ -86,6 +139,10 @@ public class ArrArray {
          * Časovna kompleksnost: O(log n)
          */
         for (int i = 0; i < k; i++) {
+<<<<<<< HEAD
+            // if A_i is empty continue
+=======
+>>>>>>> 09808f6d364c43a6c9520b0011c73bc63d4b15a0
             if (isEmpty(i)) continue;
 
             int low = 0;
@@ -150,13 +207,36 @@ public class ArrArray {
         for (int i = 0; i < k; i++) {
             System.out.printf("%s%d: ", "A_", i);
             if (!isEmpty(i)) {
+<<<<<<< HEAD
                 if (array.get(i)[0].isDeleted) {
+=======
+<<<<<<< HEAD
+                if (array.get(i)[0].getValue() != null) {
+//                    System.out.printf("%d/%d", array.get(i)[0].getValue(), array.get(i)[0].getDuplicateCounter());
+=======
+                if (array.get(i)[0] != null) {
+                    System.out.printf("%d/%d", array.get(i)[0].getValue(), array.get(i)[0].getDuplicateCounter());
+>>>>>>> 09808f6d364c43a6c9520b0011c73bc63d4b15a0
+                } else if (array.get(i)[0].isDeleted) {
+>>>>>>> 5e5d9d65b464d360cb8541fb1768999cc37baf94
                     System.out.printf("x");
                 } else {
                     System.out.printf("%d/%d", array.get(i)[0].getValue(), array.get(i)[0].getDuplicateCounter());
                 }
                 for (int j = 1; j < (int) Math.pow(2, i); j++) {
+<<<<<<< HEAD
                     if (array.get(i)[j].isDeleted) {
+=======
+<<<<<<< HEAD
+                    if (array.get(i)[j].getValue() != null) {
+//                        System.out.printf(", %d/%d", array.get(i)[j].getValue(), array.get(i)[j].getDuplicateCounter());
+                    } else if (array.get(i)[j].isDeleted) {
+=======
+                    if (array.get(i)[j] != null) {
+                        System.out.printf(", %d/%d", array.get(i)[j].getValue(), array.get(i)[j].getDuplicateCounter());
+                    } else if (array.get(i)[j] != null && array.get(i)[j].isDeleted) {
+>>>>>>> 09808f6d364c43a6c9520b0011c73bc63d4b15a0
+>>>>>>> 5e5d9d65b464d360cb8541fb1768999cc37baf94
                         System.out.printf(", x");
                     } else {
                         System.out.printf(", %d/%d", array.get(i)[j].getValue(), array.get(i)[j].getDuplicateCounter());
@@ -189,11 +269,25 @@ public class ArrArray {
         return true;
     }
 
+<<<<<<< HEAD
+    private void getDuplicateCount(Element e) {
+        duplicateElements.stream()
+                .collect(Collectors.groupingBy(Element::getValue, Collectors.counting()))
+                .values()
+                .stream()
+                .filter(value -> value.intValue() == e.getValue())
+                .count();
+    }
+
+    private static void refactor() {
+
+=======
     private void removeFromFilter(int e) {
         while (e > 1) {
             bloomFilter[e % 10]--;
             e = e / 10;
         }
+>>>>>>> 09808f6d364c43a6c9520b0011c73bc63d4b15a0
     }
 
     private void merge(int e) {
@@ -218,6 +312,7 @@ public class ArrArray {
         array.add(mergedArray);
     }
 
+<<<<<<< HEAD
     private void merge(int start, int end, int e) {
         int n = (int) Math.pow(2, end);
         ArrayElement[] mergedArray = new ArrayElement[n];
@@ -281,6 +376,18 @@ public class ArrArray {
         }
     }
 
+=======
+<<<<<<< HEAD
+    class Element implements Comparable<Integer> {
+        private Integer value;
+//        int duplicateCounter;
+        boolean isDeleted;
+
+        Element(Integer value) {
+            this.value = value;
+//            duplicateCounter = 0;
+=======
+>>>>>>> 5e5d9d65b464d360cb8541fb1768999cc37baf94
     class ArrayElement implements Comparable<Integer> {
         private int value;
         int duplicateCounter;
@@ -288,7 +395,12 @@ public class ArrArray {
 
         public ArrayElement(int value) {
             this.value = value;
+<<<<<<< HEAD
             duplicateCounter = 1;
+=======
+            duplicateCounter = 0;
+>>>>>>> 09808f6d364c43a6c9520b0011c73bc63d4b15a0
+>>>>>>> 5e5d9d65b464d360cb8541fb1768999cc37baf94
             isDeleted = false;
         }
 
@@ -301,14 +413,40 @@ public class ArrArray {
             return value;
         }
 
+<<<<<<< HEAD
         public int getDuplicateCounter() {
             return duplicateCounter;
         }
+=======
+<<<<<<< HEAD
+        public void setDuplicateCounter(int x) {
+//            duplicateCounter += x;
+=======
+        public void incrementDuplicateCounter() {
+            duplicateCounter++;
+>>>>>>> 09808f6d364c43a6c9520b0011c73bc63d4b15a0
+        }
+
+//        public int getDuplicateCounter() {
+//            return duplicateCounter;
+//        }
+>>>>>>> 5e5d9d65b464d360cb8541fb1768999cc37baf94
 
         public void lazyDelete() {
+<<<<<<< HEAD
+            isDeleted = true;
+//            duplicateCounter--;
+        }
+    }
+
+    class TypeCastException extends Exception {
+        TypeCastException(String errorMessage) {
+            super(errorMessage);
+=======
             if (--duplicateCounter == 0) {
                 isDeleted = true;
             }
+>>>>>>> 09808f6d364c43a6c9520b0011c73bc63d4b15a0
         }
     }
 }

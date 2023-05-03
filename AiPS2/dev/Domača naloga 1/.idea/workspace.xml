@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58018706-43e9-4b58-bbb9-9a5b0a640849" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../AiPS/snov/Algoritmi in Podatkovne Strukture" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AiPS/snov/Algoritmi in Podatkovne Strukture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3D-Game" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3D-Game" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domace_naloge/naloge/ArrArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../domace_naloge/naloge/ArrArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domace_naloge/naloge/ProgamerskaNaloga1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../domace_naloge/naloge/ProgamerskaNaloga1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../EMP/dev/Projekt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../EMP/dev/Projekt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../IS/dev/Projekt/SocialNetworkAPI" beforeDir="false" afterPath="$PROJECT_DIR$/../../../IS/dev/Projekt/SocialNetworkAPI" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../IS/dev/Projekt/SocialNetworkWebApp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../IS/dev/Projekt/SocialNetworkWebApp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../OR/dev/ORLab-STM32H7" beforeDir="false" afterPath="$PROJECT_DIR$/../../../OR/dev/ORLab-STM32H7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PNS" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PNS" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681556143909</updated>
       <workItem from="1681556152666" duration="6849000" />
+      <workItem from="1682348908089" duration="18000" />
     </task>
     <servers />
   </component>
