@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">LabWork5</string>
+    <string name="main_title">Letal.ko</string>
+    <string name="main_text">Potuj v najlepše kraje po najboljši ceni!</string>
+    <string name="main_button_text">Naprej</string>
+    <string name="details_total">Skupaj: </string>
+    <string name="details_checkout">Na blagajno</string>
+    <string-array name="countries">
+        <item>ZDA</item>
+        <item>Anglija</item>
+        <item>Nizozemska</item>
+        <item>Španija</item>
+        <item>Portugalska</item>
+        <item>Grčija</item>
+        <item>Maroko</item>
+        <item>Avstralija</item>
+        <item>Nova Zelandija</item>
+        <item>Tajska</item>
+    </string-array>
+    <string-array name="cities">
+        <item>New York</item>
+        <item>London</item>
+        <item>Amsterdam</item>
+        <item>Madrid</item>
+        <item>Lizbona</item>
+        <item>Atene</item>
+        <item>Marakeš</item>
+        <item>Sydney</item>
+        <item>Wellington</item>
+        <item>Bangkok</item>
+    </string-array>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+    </string>
+</resources>
