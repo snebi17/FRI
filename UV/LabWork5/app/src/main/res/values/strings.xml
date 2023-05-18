@@ -3,8 +3,6 @@
     <string name="main_title">Letal.ko</string>
     <string name="main_text">Potuj v najlepše kraje po najboljši ceni!</string>
     <string name="main_button_text">Naprej</string>
-    <string name="details_total">Skupaj: </string>
-    <string name="details_checkout">Na blagajno</string>
     <string-array name="countries">
         <item>ZDA</item>
         <item>Anglija</item>
@@ -35,4 +33,11 @@
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
         nisi ut aliquip ex ea commodo consequat.
     </string>
+    <string name="details_return">Povratna karta?</string>
+    <string name="details_total">Skupaj: </string>
+    <string name="details_checkout">Blagajna</string>
+    <string name="details_fullname">Ime in priimek*</string>
+    <string name="details_dateofbirth">Datum rojstva*</string>
+    <string name="details_add">Dodaj</string>
+    <string name="checkout_passengers">Potniki</string>
 </resources>

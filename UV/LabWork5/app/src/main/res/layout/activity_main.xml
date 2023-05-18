@@ -11,35 +11,50 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/main_title"
-        android:textSize="25sp"
+        android:backgroundTint="@color/accent"
         android:fontWeight="800"
+        android:singleLine="false"
+        android:soundEffectsEnabled="false"
+        android:text="@string/main_title"
+        android:textAllCaps="true"
         android:textColor="@color/accent"
+        android:textSize="50sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/mainText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/mainText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/accent"
         android:text="@string/main_text"
-        android:textSize="18sp"
         android:textColor="@color/accent"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" android:id="@+id/mainText"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:text="@string/main_button_text"
+        android:id="@+id/mainButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:id="@+id/mainButton"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/secondaryColor1"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/mainText"
-        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+        android:onClick="showDestinations"
+        android:paddingLeft="45dp"
+        android:paddingTop="15dp"
+        android:paddingRight="45dp"
+        android:paddingBottom="15dp"
+        android:text="@string/main_button_text"
+        android:textColor="@color/secondaryColor2"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:onClick="showDestinations" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainText"
+        app:layout_constraintVertical_bias="0.496" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
