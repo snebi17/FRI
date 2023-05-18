@@ -1,4 +1,4 @@
-package naloge;
+package naloge.prvaNaloga;
 
 public class ProgramerskaNaloga1 {
     public static void main(String[] args) {
