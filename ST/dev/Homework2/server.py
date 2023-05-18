@@ -21,6 +21,18 @@ connection: Close\r
 \r
 """
 
+RESPONSE_301 = """HTTP/1.1 301 Moved permanently\r
+location: %s
+<!doctype html>
+<h1>301 Moved Permanantly</h1>
+"""
+
+RESPONSE_400 = """HTTP/1.1 400 Bad request\r
+<!doctype html>
+<h1>400 Bad request</h1>
+<p>Request doesn't match the server specification.</p>
+"""
+
 # Represents a table row that holds user data
 TABLE_ROW = """
 <tr>
@@ -40,6 +52,12 @@ connection: Close\r
 <p>Page cannot be found.</p>
 """
 
+RESPONSE_405 = """HTTP/1.1 405 Method not allowed\r
+<!doctype html>
+<h1>405 Method not allowed</h1>
+<p>Method is not allowed.</p>
+"""
+
 DIRECTORY_LISTING = """<!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
@@ -48,12 +66,11 @@ DIRECTORY_LISTING = """<!DOCTYPE html>
 <h1>Contents of %s:</h1>
 
 <ul>
-{{CONTENTS}}
-</ul> 
+%s
+</ul>
 """
 
 FILE_TEMPLATE = "  <li><a href='%s'>%s</li>"
-
 
 def save_to_db(first, last):
     """Create a new user with given first and last name and store it into
@@ -125,32 +142,143 @@ def process_request(connection, address):
     """
 
     client = connection.makefile("wrb")
-    line = client.readline().decode("utf-8").strip()
+    line = client.readline().decode("utf-8")
+    headers = parse_headers(client)
 
     try:
         method, uri, version = line.split()
-        assert method == "GET" or "POST", "Invalid request method"
-        assert len(uri) and uri[0] == "/", "Invalid request URI"
-        assert version == "HTTP/1.1", "Invalid request version"
-        headers = parse_headers(client)
-        # print(method, uri, version, headers)
 
-        with open(join(WWW_DATA, uri[1:]), "rb") as h:
-            resource = h.read()
+        if version != "HTTP/1.1":
+            client.write(bytes(RESPONSE_400, "utf-8"))
 
-        mime, _ = mimetypes.guess_type(uri)
+        if not headers["Host"]:
+            client.write(bytes(RESPONSE_400, "utf-8"))
 
-        response_headers = HEADER_RESPONSE_200 % (mime if mime != None else "application/octet-stream", len(resource))
-        client.write(response_headers.encode("utf-8"))
-        client.write(resource)
+        if any(x in uri for x in ("/app-add", "/app-json", "/app-index")):
+            serve_dynamic(method, uri, client)
+        else:
+            serve_static(method, uri, headers, client)
 
     except (ValueError, AssertionError) as e:
         print("Invalid request line %s -- %s" % (line, e))
     except FileNotFoundError:
-        client.write(RESPONSE_404.encode("utf-8"))
+        client.write(bytes(RESPONSE_404, "utf-8"))
     finally:
         client.close()
 
+
+def serve_static(method, uri, headers, client):
+    if method != "GET" and method != "POST":
+        client.write(bytes(RESPONSE_405, "utf-8"))
+
+    if method == "POST":
+        if not headers["Content-Length"]:
+            client.write(bytes(RESPONSE_400, "utf-8"))
+
+    if uri[-1] != "/":
+        if isfile(join(WWW_DATA, uri[1:])):
+            with open(join(WWW_DATA, uri[1:]), "rb") as h:
+                resource = h.read()
+            mime, _ = mimetypes.guess_type(uri)
+            response_headers = HEADER_RESPONSE_200 % (mime if mime is not None else "application/octet-stream", len(resource))
+            client.write(bytes(response_headers, "utf-8"))
+            client.write(resource)
+        elif isdir(join(WWW_DATA, uri[1:])):
+            client.write(bytes(RESPONSE_301 % (uri[1:] + "/"), "utf-8"))
+        else:
+            client.write(bytes(RESPONSE_404, "utf-8"))
+    else:
+        if "index.html" in listdir(join(WWW_DATA, uri[1:])):
+            with open(join(WWW_DATA, join(uri[1:], "index.html")), "rb") as h:
+                resource = h.read()
+            response_headers = HEADER_RESPONSE_200 % ("text/html", len(resource))
+            client.write(bytes(response_headers, "utf-8"))
+            client.write(resource)
+        else:
+            contents = FILE_TEMPLATE % ("..", "..")
+            for f in sorted(listdir(join(WWW_DATA, uri[1:]))):
+                contents += "\n" + FILE_TEMPLATE % (f, f)
+            dir_listing = DIRECTORY_LISTING % (uri, uri, contents)
+            response_headers = HEADER_RESPONSE_200 % ("text/html", len(dir_listing))
+            client.write(bytes(response_headers, "utf-8"))
+            client.write(bytes(dir_listing, "utf-8"))
+
+def serve_dynamic(method, uri, client):
+    if "/app-add" in uri:
+        if method != "POST":
+            client.write(bytes(RESPONSE_405, "utf-8"))
+
+        body = client.readline().decode("utf-8")
+        first, last = unquote_plus(body).split("&")
+
+        if not len(first) or not len(last):
+            client.write(bytes(RESPONSE_400, "utf-8"))
+
+        first = first.split("=")[1]
+        last = last.split("=")[1]
+
+        save_to_db(first, last)
+
+        with open(join(WWW_DATA, "app_add.html"), "rb") as h:
+            resource = h.read()
+
+        response_headers = HEADER_RESPONSE_200 % ("text/html", len(resource))
+        client.write(bytes(response_headers, "utf-8"))
+        client.write(resource)
+
+    if "/app-json" in uri:
+        if method != "GET":
+            client.write(bytes(RESPONSE_405, "utf-8"))
+
+        split = uri.split("?")
+        if len(split) == 1:
+            students = read_from_db()
+
+        else:
+            params = split[1].split("&")
+            criteria = {}
+            for param in params:
+                criteria[param.split("=")[0].strip()] = param.split("=")[1].strip()
+            students = read_from_db(criteria)
+
+        response_headers = HEADER_RESPONSE_200 % ("application/json", len(resource))
+        client.write(bytes(response_headers, "utf-8"))
+        client.write(json.dumps(students))
+
+    if "/app-index" in uri:
+        if method != "GET":
+            client.write(bytes(RESPONSE_405, "utf-8"))
+
+        split = uri.split("?")
+        if len(split) == 1:
+            students = read_from_db({})
+        else:
+            params = split[1].split("&")
+            criteria = {}
+            for param in params:
+                criteria[param.split("=")[0].strip()] = param.split("=")[1].strip()
+            students = read_from_db(criteria)
+
+        response = ""
+        for student in students:
+            number = student["number"]
+            first = student["first"]
+            last = student["last"]
+            response += TABLE_ROW % (
+                int(number),
+                first,
+                last
+            )
+        response = response.strip()
+
+        with open(join(WWW_DATA, "app_list.html"), "rb") as h:
+            resource = h.read()
+
+        resource = resource.replace(b"{{students}}", bytes(response, "utf-8"))
+        response_headers = HEADER_RESPONSE_200 % ("text/html", len(resource))
+
+        client.write(bytes(response_headers, "utf-8"))
+        client.write(resource)
 
 def parse_headers(client):
     headers = {}
@@ -160,6 +288,16 @@ def parse_headers(client):
             return headers
         key, value = line.split(":", 1)
         headers[key.strip()] = value.strip()
+
+def parse_body(client):
+    body = {}
+    client.readline()
+    while True:
+        line = client.readline().decode("utf-8").strip()
+        if not line:
+            return body
+        key, value = line.split(":", 1)
+        body[key.strip()] = value.strip()
 
 def main(port):
     """Starts the server and waits for connections."""
@@ -173,10 +311,10 @@ def main(port):
 
     while True:
         connection, address = server.accept()
-        # print("[%s:%d] CONNECTED" % address)
+        print("[%s:%d] CONNECTED" % address)
         process_request(connection, address)
         connection.close()
-        # print("[%s:%d] DISCONNECTED" % address)
+        print("[%s:%d] DISCONNECTED" % address)
 
 
 if __name__ == "__main__":
