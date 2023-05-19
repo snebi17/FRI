@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 // require_once("controller/BookController.php");
 
 # Define a global constant pointing to the URL of the application
@@ -46,3 +47,12 @@ try {
 } finally {
     exit();
 }
+=======
+$router = [
+    "" => function() {
+        ViewHelper::redirect(BASE_URL . "")
+    }
+]
+
+?>
+>>>>>>> 79a439cc8a8ad4a8ee585f621a6bcbdd595f4ab1
