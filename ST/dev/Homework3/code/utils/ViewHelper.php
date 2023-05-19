@@ -11,6 +11,10 @@ class ViewHelper {
         echo $renderedView;
     }
 
+    public static function redirect($url) {
+        header("Location: " . $url);
+    }
+
     public static function error404() {
         header('This is not the page you are looking for', true, 404);
         $html404 = sprintf("<!doctype html>\n" .

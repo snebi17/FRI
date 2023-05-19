@@ -1,58 +1,72 @@
 <?php
 
-<<<<<<< HEAD
-// require_once("controller/BookController.php");
+require_once "controllers/InitDB.php";
+require_once "utils/ViewHelper.php";
+require_once "controllers/UserController.php";
+require_once "controllers/DocumentController.php";
 
-# Define a global constant pointing to the URL of the application
 define("BASE_URL", $_SERVER["SCRIPT_NAME"] . "/");
+define("CSS_URL", rtrim($_SERVER["SCRIPT_NAME"], "index.php") . "static/css/");
+define("IMAGES_URL", rtrim($_SERVER["SCRIPT_NAME"], "index.php") . "static/images/");
 
-# Request path after /index.php/ with leading and trailing slashes removed
 $path = isset($_SERVER["PATH_INFO"]) ? trim($_SERVER["PATH_INFO"], "/") : "";
 
-# The mapping of URLs. It is a simple array where:
-# - keys represent URLs
-# - values represent functions to be called when a client requests that URL
 $urls = [
-    "login" => function () {
-        AuthController::showLoginForm();
+    "login" => function() {
+       if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            UserController::login();
+       } else {
+           UserController::showLoginForm();
+       }
     },
-    "book/add" => function () {
-        if ($_SERVER["REQUEST_METHOD"] == "GET") {
-            // BookController::showAddForm();
+    "logout" => function() {
+        AuthUtil::logout();
+        ViewHelper::redirect(BASE_URL . "home");
+    },
+    "register" => function() {
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            UserController::register();
+       } else {
+            UserController::showRegisterForm();
+       }
+    },
+    "home" => function() {
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // DocumentController::getAll();
         } else {
-            // BookController::add();
+            ViewHelper::render("views/shared/home.php");
         }
     },
-    "" => function () {
-        ViewHelper::redirect(BASE_URL . "login");
-    }
+    "dashboard" => function() {
+        if (AuthUtil::authorize()) {
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                UserController::update();
+            } else {
+                UserController::showDashboard();
+            }
+        } else {
+            ViewHelper::redirect(BASE_URL . "login");
+        }
 
-    // TODO: Add router entries for 1) search, 2) book/edit and 3) book/delete
+    },
+    "terms-and-conditions" => function() {
+        ViewHelper::render("views/shared/terms-and-conditions.php");
+    },
+>>>>>>> 89fb7a0ce770743759163b9b6ff15fc4c546884b
+    "" => function() {
+        ViewHelper::redirect(BASE_URL . "login");
+    },
 ];
 
-# The actual router.
-# Tries to invoke the function that is mapped for the given path
 try {
     if (isset($urls[$path])) {
-        # Great, the path is defined in the router
-        $urls[$path](); // invokes function that calls the controller
+       $urls[$path]();
     } else {
-        # Fail, the path is not defined. Show an error message.
         echo "No controller for '$path'";
     }
 } catch (Exception $e) {
-    # Provisional: whenever there is an exception, display some info about it
-    # this should be disabled in production
-    ViewHelper::error400($e);
-} finally {
-    exit();
-}
-=======
-$router = [
-    "" => function() {
-        ViewHelper::redirect(BASE_URL . "")
-    }
-]
+    echo "An error occurred: <pre>$e</pre>";
+    // ViewHelper::error404();
+} 
 
 ?>
->>>>>>> 79a439cc8a8ad4a8ee585f621a6bcbdd595f4ab1

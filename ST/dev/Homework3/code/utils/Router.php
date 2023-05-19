@@ -1,19 +1,19 @@
 <?php
 
-require_once("ViewHelper.php");
+// require_once("ViewHelper.php");
 
-class Router {
-    private $instance = null;
+// class Router {
+//     private $instance = null;
 
-    public static function navigate($url) {
-        header("Location: " . $url);
-    }
+//     public static function navigate($url) {
+//         header("Location: " . $url);
+//     }
 
-    public static getInstance() {
-        if (!self::$instance) {
+//     public static getInstance() {
+//         if (!self::$instance) {
             
-        }
-    }
+//         }
+//     }
 
-}
+// }
 ?>
