@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="677c478f-a57d-457b-9cdd-2f554e6eef8f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../3D-Game" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../3D-Game" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domace_naloge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../domace_naloge.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArrArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgramerskaNaloga1.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramerskaNaloga1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/domace_naloge/domace_naloge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/domace_naloge/domace_naloge.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/domace_naloge/naloge/ArrArray$ArrayElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/domace_naloge/naloge/ArrArray$ArrayElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/domace_naloge/naloge/ArrArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/domace_naloge/naloge/ArrArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/domace_naloge/naloge/ProgramerskaNaloga1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/domace_naloge/naloge/ProgramerskaNaloga1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../EMP/dev/Projekt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../EMP/dev/Projekt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../IS/dev/Projekt/SocialNetworkAPI" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../IS/dev/Projekt/SocialNetworkAPI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../PNS" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../PNS" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="2PzCheC19joaNRLmDWB2wRjjBBw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="677c478f-a57d-457b-9cdd-2f554e6eef8f" name="Changes" comment="" />
+      <created>1684450646996</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684450646996</updated>
+    </task>
+    <servers />
+  </component>
+</project>
