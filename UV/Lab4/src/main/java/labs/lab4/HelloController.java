@@ -31,15 +31,7 @@ public class HelloController implements Initializable {
     @FXML
     private DatePicker datumOd;
     @FXML
-    private Spinner<Integer> casOdUre;
-    @FXML
-    private Spinner<Integer> casOdMinute;
-    @FXML
     private DatePicker datumDo;
-    @FXML
-    private Spinner<Integer> casDoUre;
-    @FXML
-    private Spinner<Integer> casDoMinute;
     @FXML
     private ComboBox lokacijaPrevzema;
     @FXML
@@ -92,6 +84,8 @@ public class HelloController implements Initializable {
     private TextField CCV;
     @FXML
     private Label porociloNajema;
+    @FXML
+    private Label opombe;
 
     @FXML
     @Override
@@ -103,7 +97,6 @@ public class HelloController implements Initializable {
         });
         initializeComboBox();
         initializeRadioButtons();
-        initializeSpinners();
     }
 
     private void initializeComboBox() {
@@ -184,6 +177,10 @@ public class HelloController implements Initializable {
         dodZavDa.setToggleGroup(dodatnoZavarovanje);
         dodZavNe.setToggleGroup(dodatnoZavarovanje);
 
+        dodatnoZavarovanje.selectedToggleProperty().addListener((arg0, oldValue, newValue) -> {
+            calculatePrice();
+        });
+
         nacinPlacila = new ToggleGroup();
         placiloKartica.setToggleGroup(nacinPlacila);
         placiloGotovina.setToggleGroup(nacinPlacila);
@@ -251,16 +248,6 @@ public class HelloController implements Initializable {
         });
     }
 
-    private void initializeSpinners() {
-        casOdUre.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23));
-
-        casOdMinute.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 59));
-
-        casDoUre.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 23));
-
-        casDoMinute.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 59));
-    }
-
     public void onSubmit(ActionEvent e) {
         if (izbrani.size() < 27) {
             try {
@@ -276,9 +263,10 @@ public class HelloController implements Initializable {
                 String s = String.format("%s\n\n%s\n%s\n%s",
                         "Poročilo o najemu:",
                         String.format("Ime, priimek: %s, %s", imeNajemnika.getText(), priimekNajemnika.getText()),
-                        String.format("Datum najema: %s do %s (%d dni)", dateFrom.toString(), dateTo.toString(), diff),
+                        String.format("Trajanje najema: %s do %s (%d dni)", dateFrom.toString(), dateTo.toString(), diff),
                         toggleGroupValue.equals("Kartica") ? String.format("Številka kartice: XXXX-XXXX-XXXX-%s", stKartice.getText(10, 14)) : "Plačilo z gotovino");
                 porociloNajema.setText(s);
+                porociloNajema.setStyle("");
 
             } catch (ParseException parseException) {
                 System.out.println(parseException);
@@ -304,8 +292,10 @@ public class HelloController implements Initializable {
             long diff = TimeUnit.DAYS.convert(diffInMillies, TimeUnit.MILLISECONDS);
 
             int cena = (int) Math.floor(diff * 100);
-            int cenaZavarovanja = (dodZavDa.isSelected()) ? (int) Math.floor(diff * 100) : 0;
-            cenaNajema.setText(String.valueOf(cena + cenaZavarovanja) + "€ (cena najema je 100€/dan)");
+            int cenaZavarovanja = (dodZavDa.isSelected()) ? (int) Math.floor(diff * 2) : 0;
+            cenaNajema.setText(String.format("%s €", String.valueOf(cena + cenaZavarovanja)));
+            opombe.setText("cena najema je 100€/dan, z dodatnim zavarovanjem 2€/dan");
+            opombe.setStyle("-fx-font-size: 10px");
         } catch (ParseException e) {
             System.out.println(e);
         }

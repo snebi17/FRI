@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="677c478f-a57d-457b-9cdd-2f554e6eef8f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../../3D-Game" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../3D-Game" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domace_naloge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../domace_naloge.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArrArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArrArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProgramerskaNaloga1.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProgramerskaNaloga1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../out/production/domace_naloge/domace_naloge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/domace_naloge/domace_naloge.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../out/production/domace_naloge/naloge/ArrArray$ArrayElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/domace_naloge/naloge/ArrArray$ArrayElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../out/production/domace_naloge/naloge/ArrArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/domace_naloge/naloge/ArrArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../out/production/domace_naloge/naloge/ProgramerskaNaloga1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/domace_naloge/naloge/ProgramerskaNaloga1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../EMP/dev/Projekt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../EMP/dev/Projekt" afterDir="false" />
+    <list default="true" id="b57739e1-48b2-4fe4-8d17-735eab081cf7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../AiPS/snov/Algoritmi in Podatkovne Strukture" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../AiPS/snov/Algoritmi in Podatkovne Strukture" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../IS/dev/Projekt/SocialNetworkAPI" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../IS/dev/Projekt/SocialNetworkAPI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../IS/dev/Projekt/SocialNetworkWebApp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../IS/dev/Projekt/SocialNetworkWebApp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../OR/dev/ORLab-STM32H7" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../OR/dev/ORLab-STM32H7" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../PNS" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../PNS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/models/UserModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/sql/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/sql/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/static/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/views/user/user-login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/code/views/user/user-register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../ST/dev/Homework3/db.sql.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +43,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="2PzCheC19joaNRLmDWB2wRjjBBw" />
+=======
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Q4QvUMwrXxby7CrCQiLM2hXSoI" />
+>>>>>>> f9a38f9150dd79ed208b41fc5fc28c0a819c3b76
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,10 +59,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
+=======
+    <property name="WebServerToolWindowFactoryState" value="false" />
+>>>>>>> f9a38f9150dd79ed208b41fc5fc28c0a819c3b76
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="677c478f-a57d-457b-9cdd-2f554e6eef8f" name="Changes" comment="" />
       <created>1684450646996</created>
       <option name="number" value="Default" />
@@ -43,4 +76,18 @@
     </task>
     <servers />
   </component>
+=======
+      <changelist id="b57739e1-48b2-4fe4-8d17-735eab081cf7" name="Changes" comment="" />
+      <created>1684610610634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684610610634</updated>
+      <workItem from="1684610615448" duration="166000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+>>>>>>> f9a38f9150dd79ed208b41fc5fc28c0a819c3b76
 </project>

@@ -32,7 +32,7 @@ $urls = [
     },
     "home" => function() {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // DocumentController::getAll();
+            DocumentController::getAll();
         } else {
             ViewHelper::render("views/shared/home.php");
         }
