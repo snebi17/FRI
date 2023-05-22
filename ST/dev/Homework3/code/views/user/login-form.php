@@ -1,3 +1,5 @@
+<?php include("views/shared/session.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +14,7 @@
     <div class="container" style="height: 80vh">
         <div class="row h-100 justify-content-center align-items-center">
             <div class="col-6">
-                <form action="<?= BASE_URL . "login" ?>" method="post" id="form">
+                <form action="<?= BASE_URL . "login" ?>" method="post">
                     <div class="form-group">
                         <label for="username">Uporabniško ime</label>
                         <input type="text" name="username" class="form-control" required/>
@@ -26,6 +28,12 @@
                         <small class="form-text text-muted">Še niste <a href="<?= BASE_URL . "register"?>">registrirani?</a></small>
                     </div>
                 </form>
+                <?php if (isset($errorMessage)): ?>
+                        <p class="alert-danger mt-2 py-2 text-center rounded" role="alert">
+                            <?= $errorMessage ?>
+                        </p>
+                        <?php unset($errorMessage); ?>
+                <?php endif; ?>
             </div>
         </div>
     </div>
@@ -34,30 +42,6 @@
         $("button").on("click", function() {
             
         });
-
-        $("#form").validate({
-            rules: {
-                name: "required",
-                email: {
-                    required: true,
-                    email: true
-                },
-                password: {
-                    required: true,
-                    password: true
-                }
-            },
-            messages: {
-                name: "Prosim vpišite vaše ime.",
-                email: {
-                    required: "Prosim vpišite vaš e-naslov.",
-                    email: "E-naslov mora ustrezati obliki ime@domena.com"
-                }
-            },
-            success: function(label) {
-
-            }
-        })
     </script>
 </body>
 </html>

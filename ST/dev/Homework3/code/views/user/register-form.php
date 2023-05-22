@@ -1,3 +1,4 @@
+<?php include("views/shared/session.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,13 +39,13 @@
                     <button type="submit" class="btn btn-primary">Registracija</button>
                 </form>
                 <?php if (isset($successMessage)): ?>
-                        <p class="alert-success mt-2 p-3" role="alert">
-                            <?= $successMessage ?> Klikni za <a href="<?= BASE_URL . "login"?>">prijavo.</a>
+                        <p class="alert-success mt-2 py-2 text-center rounded" role="alert">
+                            <?= $successMessage ?> Kliknite za <a href="<?= BASE_URL . "login"?>">prijavo.</a>
                         </p>
                         <?php unset($successMessage); ?>
                 <?php endif; ?>
                 <?php if (isset($errorMessage)): ?>
-                        <p class="alert-danger mt-2 p-3" role="alert">
+                        <p class="alert-danger mt-2 py-2 text-center rounded" role="alert">
                             <?= $errorMessage ?>
                         </p>
                         <?php unset($errorMessage); ?>

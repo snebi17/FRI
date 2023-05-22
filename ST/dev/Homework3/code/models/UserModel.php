@@ -5,17 +5,20 @@ require_once "utils/AuthUtil.php";
 
 class UserModel {
     public static function getAll() {
-        $dbh = InitDB::getInstance();
-
+        $conn = InitDB::getInstance();
+        $result = $conn->query("SELECT * FROM user");
+        return $result->fetch_assoc();
     }
 
     public static function get($id) {
         $conn = InitDB::getInstance();
-        $stmt = $conn->prepare("SELECT * FROM user WHERE id = ?");
-        $stmt->bind_param("d", $id);
+        $result = $conn->query("SELECT * FROM user WHERE id = $id");
+        return $result->fetch_assoc();
+    }
 
-        $stmt->execute();
-        $result = $stmt->get_result();
+    public static function getRoleById($id) {
+        $conn = InitDB::getInstance();
+        $result = $conn->query("SELECT role_id FROM user_roles WHERE user_id = $id");
         return $result->fetch_assoc();
     }
 
@@ -30,27 +33,22 @@ class UserModel {
         return $count > 0;
     }
 
-    public static function register() {
+    public static function register($username, $password, $fullname, $email) {
         $conn = InitDB::getInstance();
-        $username = strval($_POST["username"]);
-        $email = strval($_POST["email"]);
 
         if (!self::user_exists($conn, $username, $email)) {
-            $password = password_hash(strval($_POST["password"]), PASSWORD_DEFAULT);
-            $fullname = strval($_POST["fullname"]);
+            $password = password_hash($password, PASSWORD_DEFAULT);
 
             $stmt = $conn->prepare("INSERT INTO user (username, password, fullname, email) VALUES (?, ?, ?, ?)");
             $stmt->bind_param("ssss", $username, $password, $fullname, $email);
 
-            $stmt->execute();
+            if (!$stmt->execute()) return false;
+            
+            $result = $conn->query("SELECT id FROM user ORDER BY id DESC LIMIT 1");
+            $row = $result->fetch_assoc();
+            $id = intval($row["id"]);
 
-            if (is_null($stmt->insert_id)) {
-                return $stmt;
-            }
-
-            $stmt = $conn->prepare("INSERT INTO user_roles (user_id, role_id) VALUES (?, 1)");
-            $stmt->bind_param("d", $conn->insert_id);
-            $stmt->execute();
+            $conn->query("INSERT INTO user_roles (user_id, role_id) VALUES ($id, 2)");
 
             return true;
         }
@@ -58,10 +56,9 @@ class UserModel {
         return false;
     }
 
-    public static function login() {
+    public static function login($username, $password) {
         $conn = InitDB::getInstance();
         $stmt = $conn->prepare("SELECT * FROM user WHERE username = ?");
-        $username = strval($_POST["username"]);
         $stmt->bind_param("s", $username);
         
         $stmt->execute();
@@ -69,12 +66,13 @@ class UserModel {
 
         if ($result->num_rows == 1) {
             $user = $result->fetch_assoc();
-            $password = strval($_POST["password"]);
             if (password_verify($password, $user["password"])) {
-                AuthUtil::login($user);
+                $isAdmin = intval(self::getRoleById($user["id"])["role_id"]) == 1; 
+                AuthUtil::login($user, $isAdmin);
                 return true;
             }
         }
+
         return false;
     }
 
@@ -82,20 +80,27 @@ class UserModel {
         AuthUtil::logout();
     }
 
+    public static function search($query) {
+        $query = "%" . $query . "%";
+        $conn = InitDB::getInstance();
+        $stmt = $conn->prepare("SELECT * FROM user WHERE username LIKE ? OR fullname LIKE ?");
+        $stmt->bind_param("ss", $query, $query);
+        $result = $stmt->get_result();
+        return $result->fetch_all(MYSQLI_ASSOC);
+    }
+
+    public static function update($id, $username, $password, $fullname, $email) {
+        $conn = InitDB::getInstance();
+        $stmt = $conn->prepare("UPDATE user SET username = ?, password = ?, fullname = ?, email = ? WHERE id = $id");
+        $stmt->bind_param("ssss", $username, $password, $fullname, $email);
+        return $stmt->execute();
+    }
+
     public static function delete($id) {
         $conn = InitDB::getInstance();
-        $stmt = $conn->prepare("DELETE FROM user WHERE id = ?");
-        $stmt->bind_param("d", $id);
-
-        $stmt->execute();
-        $result = $stmt->get_result();
-
-        return $result->num_rows == 1;
+        return $conn->query("DELETE FROM user WHERE id = $id");
     }
 
-    public static function update($id) {
-        
-    }
 }
 
 ?>

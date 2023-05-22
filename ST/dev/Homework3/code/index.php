@@ -21,7 +21,7 @@ $urls = [
     },
     "logout" => function() {
         AuthUtil::logout();
-        ViewHelper::redirect(BASE_URL . "home");
+        ViewHelper::redirect(BASE_URL . "login");
     },
     "register" => function() {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -32,25 +32,36 @@ $urls = [
     },
     "home" => function() {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            DocumentController::getAll();
+            
         } else {
             ViewHelper::render("views/shared/home.php");
         }
     },
-    "dashboard" => function() {
-        if (AuthUtil::authorize()) {
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                UserController::update();
-            } else {
-                UserController::showDashboard();
-            }
+    "documents" => function() {
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            DocumentController::create();
         } else {
-            ViewHelper::redirect(BASE_URL . "login");
+            $vars = DocumentController::getAll();
+            ViewHelper::render("views/shared/documents.php", $vars);
         }
-
     },
-    "terms-and-conditions" => function() {
-        ViewHelper::render("views/shared/terms-and-conditions.php");
+    "search" => function() {
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            UserController::search();
+        }
+    },
+    "dashboard" => function() {
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            UserController::update();
+        } else {
+            UserController::showDashboard();
+        }
+        // if (AuthUtil::authorize()) {
+            
+        // } else {
+        //     ViewHelper::redirect(BASE_URL . "login");
+        // }
+
     },
     "" => function() {
         ViewHelper::redirect(BASE_URL . "login");
