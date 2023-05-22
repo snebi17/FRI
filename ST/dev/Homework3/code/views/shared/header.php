@@ -12,6 +12,7 @@
                 <li class="list-inline-item">Home</li>
                 <li class="list-inline-item">Documents</li>
             </ul>
+            <?php $isLoggedIn ? include("views/admin/search.php") : "" ?>
         </div>
         <div class="col-6 d-flex justify-content-end">
             <a class="btn btn-primary" href="<?= BASE_URL . ($isLoggedIn ? "logout" : "login") ?>">

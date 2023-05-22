@@ -1,5 +1,3 @@
-<?php include("views/shared/session.php"); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

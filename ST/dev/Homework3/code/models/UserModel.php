@@ -19,18 +19,23 @@ class UserModel {
         return $result->fetch_assoc();
     }
 
+    private static function user_exists($conn, $username, $email) {
+        $stmt = $conn->prepare("SELECT count(*) FROM user WHERE username = ? OR email = ?");
+        $stmt->bind_param("ss", $username, $email);
+        $stmt->execute();
+        $count = 0;
+        $stmt->bind_result($count);
+        $stmt->fetch();
+
+        return $count > 0;
+    }
+
     public static function register() {
         $conn = InitDB::getInstance();
         $username = strval($_POST["username"]);
         $email = strval($_POST["email"]);
 
-        $stmt = $conn->prepare("SELECT COUNT(id) FROM user WHERE username = ? OR email = ?");
-        $stmt->bind_param("ss", $username, $email);
-
-        $stmt->execute();
-        $result = $stmt->get_result();
-
-        if ($result->num_rows == 1) {
+        if (!self::user_exists($conn, $username, $email)) {
             $password = password_hash(strval($_POST["password"]), PASSWORD_DEFAULT);
             $fullname = strval($_POST["fullname"]);
 

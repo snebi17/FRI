@@ -32,7 +32,7 @@ $urls = [
     },
     "home" => function() {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // DocumentController::getAll();
+            DocumentController::getAll();
         } else {
             ViewHelper::render("views/shared/home.php");
         }
@@ -52,7 +52,6 @@ $urls = [
     "terms-and-conditions" => function() {
         ViewHelper::render("views/shared/terms-and-conditions.php");
     },
->>>>>>> 89fb7a0ce770743759163b9b6ff15fc4c546884b
     "" => function() {
         ViewHelper::redirect(BASE_URL . "login");
     },
